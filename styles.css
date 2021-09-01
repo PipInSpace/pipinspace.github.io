@@ -1,4 +1,13 @@
 #a{
     color: rgb(1, 185, 1);
-    background-color: black;
+}
+
+body{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    
+}
+
+a{
+    color: tomato;
 }
