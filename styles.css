@@ -1,13 +1,94 @@
-#a{
-    color: rgb(1, 185, 1);
+/* General Setup */
+@font-face {
+    font-family: "Roboto Mono";
+    src: url(fonts/RobotoMono-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto-Regular.ttf), url(fonts/Roboto-Thin.ttf), url(fonts/Roboto-ThinItalic.ttf), url(fonts/Roboto-Medium.ttf), url(fonts/Roboto-MediumItalic.ttf), url(fonts/Roboto-Light.ttf), url(fonts/Roboto-LightItalic.ttf), url(fonts/Roboto-Italic.ttf), url(fonts/Roboto-Bold.ttf), url(fonts/Roboto-BoldItalic.ttf), url(fonts/Roboto-Black.ttf), url(fonts/Roboto-BlackItalic.ttf);
 }
 
 body{
     background-color: rgb(15, 15, 15);
     color: white;
+    margin: 0;
+    font-family: Roboto;
     
 }
 
-a{
-    color:red;
+/* Title + Image*/
+.main_title {
+    width: 100%;
+    display: flex;
+}
+
+.title_image_container {
+    position: relative;
+    width: 50%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.title_image_gradient {
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(15,15,15,0), rgba(15,15,15,1));
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.title_description_container {
+    width: 50%;
+    margin: auto;
+}
+
+.title_description {
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+}
+
+.title_description_header {
+    font-size: 100px;
+    font-family: Roboto Mono, monospace;
+}
+
+/* Main Content/Projects */
+
+
+/* Impressum/Footer */
+.impressum {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.impressum>* {
+    flex-basis: 100%;
+}
+
+.impressum a {
+    text-decoration: none;
+    color: white;
+}
+
+.impressum a:hover {
+    color: #B7B7A4;
+}
+
+.footer {
+    margin-top: 9%;
+    height: 200px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+    padding-top: 2%;
+}
+
+.clickableImg {
+    width: 10%;
 }
