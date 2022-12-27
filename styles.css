@@ -67,6 +67,16 @@ a {
     font-family: Roboto Mono, monospace;
 }
 
+.title_description_header a{
+    color: white;
+    transition: 1s;
+}
+
+.title_description:hover a{
+    color: rgb(255, 100, 100);
+    transition: 1s;
+}
+
 @media (max-width: 1550px) {
     .title_description_container {
         position: absolute;
