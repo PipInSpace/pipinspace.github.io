@@ -39,52 +39,55 @@ a {
 
 .title_image_container {
     position: relative;
-    width: 50%;
+    width: 100%;
+    max-height: 1000px;
     pointer-events: none;
     overflow: hidden;
 }
 
 .title_image_gradient {
     position: absolute;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-    top: 0;
+    background-image: linear-gradient(to right, #f1f1f100, #f1f1f1ff);
+    /*top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     height: 100%;
-    width: 100%;
+    width: 100%;*/
 }
 
 .title_description_container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
     width: 50%;
     margin: auto;
 }
 
 .title_description {
-    color: white;
+    color: rgb(150, 52, 248);
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     margin: 20px;
     transition: 1s;
-}
-
-.title_description:hover {
-    color: rgb(255, 100, 100);
+    background-color: black;
+    border-radius: 10px;
 }
 
 .title_description_header {
+    margin: 0;
     font-size: 200%;
     font-family: Roboto Mono, monospace;
 }
 
 .title_description_header a {
-    color: white;
+    color: rgb(128, 0, 255);
     transition: 1s;
 }
 
-.title_description:hover a {
-    color: rgb(255, 100, 100);
-    transition: 1s;
+.title_description_header h1 {
+    margin: 0;
 }
 
 @media (max-width: 1550px) {
@@ -149,11 +152,12 @@ a {
 }
 
 .main_body_title {
-    font-family: Roboto Mono, monospace;
-    font-size: 80px;
-    font-weight: 200;
-    text-align: center;
-    margin-bottom: 70px;
+    font-family: Roboto-Black;
+    font-size: 40px;
+    font-weight: 300;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 1000px;
 }
 
 .project_description_title_container {
@@ -195,7 +199,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 764px;
+    max-width: 1000px;
     width: 100%;
     border: 0;
     padding: 0;
@@ -204,16 +208,16 @@ a {
 
 .project {
     align-items: flex-start;
-    border-radius: 32px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom: 10px;
     padding: 32px 32px 24px;
-    width: calc(50% - 16px);
+    width: calc(50% - 5px);
     background-color: rgb(255, 255, 255);
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
     overflow: hidden;
 }
@@ -249,7 +253,7 @@ a {
     margin-top: 16px;
     padding: 12px 28px;
     height:  44px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: black;
     color: white;
     transition: 0.5s;
@@ -290,6 +294,22 @@ a {
 
 .project_color_green hr {
     background-color: rgb(50, 124, 62);
+}
+
+.project_color_blue {
+    background-color: rgb(196, 213, 237);
+}
+
+.project_color_blue a {
+    background-color: rgb(39, 62, 95);
+}
+
+.project_color_blue a:hover {
+    background-color: rgb(83, 118, 166);
+}
+
+.project_color_blue hr {
+    background-color: rgb(27, 49, 80);
 }
 
 .project_center a {
