@@ -28,7 +28,7 @@ body {
     background-size: cover;
     color: black;
     margin: 0;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     --background: #f1f1f1;
 
 }
@@ -75,12 +75,12 @@ a {
 
 .title_description {
     color: rgb(158, 92, 225);
-    font-size: 20px;
+    font-size: 18px;
     margin: 20px;
     margin-left: 5px;
     padding: 20px;
     padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0.694);
+    background-color: rgba(0, 0, 0, 0.348);
     backdrop-filter: blur(50px);
     border-top: 2px solid var(--background);
     border-right: 2px solid var(--background);
@@ -92,6 +92,7 @@ a {
     margin-bottom: 5px;
     font-size: 40px;
     font-family: Roboto-Black;
+    font-weight: 300;
 }
 
 .title_description_header a {
@@ -103,21 +104,23 @@ a {
 }
 
 .social_icons {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .social_icons a i {
     width: 40px;
     height: 40px;
-    background-size: cover;
-    display: block;
+    margin-right: 5px;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
 }
 
 
 /* Main Content/Projects */
 
 .main_body_projects_list {
-    min-height: 100vh;
     overflow: hidden;
     padding: 20px;
     padding-top: 0;
@@ -330,6 +333,10 @@ a {
 .footer {
     padding-top: 2%;
     background-color: var(--background);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .clickableImg {
