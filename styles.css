@@ -21,7 +21,7 @@
 
 body {
     background-color: rgb(87, 87, 87);
-    background-image: url(img/Background.png);
+    background-image: url(img/Background.jpg);
     background-blend-mode:overlay;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -229,8 +229,8 @@ a {
 }
 
 .stripe_text {
-    width: calc(50% - 5px);
-    margin-left: 10px;
+    width: calc(50% - 15px);
+    margin-left: 20px;
     margin-top: 15px;
     font-size: 18px;
     font-weight: 300;
@@ -239,10 +239,32 @@ a {
     text-align-last: none;
 }
 
+.stripe_text a {
+    color: rgb(39, 62, 95)
+}
+
 .stripe_image_container {
     width: calc(50% - 5px);
     height: auto;
     flex-shrink: 0;
+}
+
+.link_button {
+    display: inline-block;
+    font-family: Roboto-Bold, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+    padding: 12px 30px;
+    height: 44px;
+    background-color: rgb(39, 62, 95);
+    color: var(--background);
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.link_button:hover {
+    background-color: rgb(83, 118, 166)
 }
 
 .main_body_projects_list {
@@ -469,6 +491,14 @@ a {
         margin-top: 80px;
         font-size: 15px;
     }
+    .stripe_text {
+        font-size: 15px;
+    }
+    .link_button {
+        height: 36px;
+        padding: 8px 10px;
+        font-size: 15px;
+    }
 }
 
 
@@ -499,5 +529,7 @@ a {
 }
 
 .clickableImg {
-    width: 10%;
+    width: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
