@@ -186,9 +186,9 @@ a {
 .stripe_container::before{
     width: 1300px;
     height: 150px;
-    background-color: rgb(196, 213, 237);
+    background-color: #ddd;
     position: absolute;
-    transform: rotate(5deg);
+    transform: rotate(3deg);
     transform-origin: 0% 0%;
     left: -20px;
     top: 0;
@@ -200,7 +200,7 @@ a {
 .stripe_container::after {
     width: 1300px;
     height: 150px;
-    background-color: rgb(196, 213, 237);
+    background-color: #ddd;
     position: absolute;
     transform: rotate(2deg);
     transform-origin: 100% 100%;
@@ -221,7 +221,7 @@ a {
     padding-right: 20px;
     padding-bottom: 20px;
     width: 100%;
-    background-color: rgb(196, 213, 237);
+    background-color: #ddd;
     margin-top: 110px;
     box-sizing: border-box;
     display: flex;
@@ -229,24 +229,27 @@ a {
 }
 
 .stripe_text {
-    width: calc(50% - 15px);
-    margin-left: 20px;
-    margin-top: 15px;
+    width: calc(50% - 5px);
+    margin-left: 10px;
+    padding: 20px;
     font-size: 18px;
     font-weight: 300;
     font-family: Roboto, sans-serif;
     text-align: justify;
     text-align-last: none;
+    background-color: var(--background);
+    box-sizing: border-box;
 }
 
 .stripe_text a {
-    color: rgb(39, 62, 95)
+    color: rgb(83, 118, 166)
 }
 
 .stripe_image_container {
     width: calc(50% - 5px);
     height: auto;
     flex-shrink: 0;
+    background-color: #fff;
 }
 
 .link_button {
@@ -493,6 +496,7 @@ a {
     }
     .stripe_text {
         font-size: 15px;
+        padding: 10px;
     }
     .link_button {
         height: 36px;
