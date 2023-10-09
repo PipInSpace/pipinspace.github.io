@@ -27,8 +27,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    backdrop-filter: blur(50px);
     color: black;
     margin: 0;
+    padding: 0.1px;
     font-family: Roboto, sans-serif;
     --background: #f1f1f1;
 
@@ -44,6 +46,7 @@ a {
     margin-bottom: 20px;
     position: relative;
     background-color: var(--background);
+    overflow: hidden;
 }
 
 /* Title + Image*/
@@ -170,6 +173,76 @@ a {
 
 .main_body {
     margin-top: 10px;
+}
+
+.stripe_container {
+    width: 100%;
+    position: relative;
+    padding-top: 1px;
+    z-index: 0;
+    margin-bottom: 50px;
+}
+
+.stripe_container::before{
+    width: 1300px;
+    height: 150px;
+    background-color: rgb(196, 213, 237);
+    position: absolute;
+    transform: rotate(5deg);
+    transform-origin: 0% 0%;
+    left: -20px;
+    top: 0;
+    
+    content: " ";
+    z-index: -1;
+}
+
+.stripe_container::after {
+    width: 1300px;
+    height: 150px;
+    background-color: rgb(196, 213, 237);
+    position: absolute;
+    transform: rotate(2deg);
+    transform-origin: 100% 100%;
+    right: 0;
+    bottom: -45px;
+
+    content: " ";
+    z-index: -1;
+}
+
+.stripe_container .main_body_title {
+    position: absolute;
+    top: 40px;
+}
+
+.stripe_content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: rgb(196, 213, 237);
+    margin-top: 110px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stripe_text {
+    width: calc(50% - 5px);
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Roboto, sans-serif;
+    text-align: justify;
+    text-align-last: none;
+}
+
+.stripe_image_container {
+    width: calc(50% - 5px);
+    height: auto;
+    flex-shrink: 0;
 }
 
 .main_body_projects_list {
@@ -352,6 +425,17 @@ a {
     .project {
         width: 100%;
     }
+    .project_top {
+        margin-top: 0;
+    }
+    .stripe_image_container {
+        width: 100%;
+    }
+    .stripe_text {
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 100%;
+    }
 }
 
 .project_center {
@@ -363,6 +447,7 @@ a {
 @media (max-width: 480px) {
     .main_body_title {
         margin-left: 10px;
+        margin-bottom: 10px;
         font-size: 24px;
     }
     .main_body_projects_list {
@@ -371,10 +456,17 @@ a {
     }
     .project {
         font-size: 15px;
+        padding: 10px;
     }
     .project a {
         height: 36px;
         padding: 8px 10px;
+        font-size: 15px;
+    }
+    .stripe_content {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 80px;
         font-size: 15px;
     }
 }
