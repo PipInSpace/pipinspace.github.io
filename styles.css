@@ -237,7 +237,7 @@ a {
     font-family: Roboto, sans-serif;
     text-align: justify;
     text-align-last: none;
-    background-color: var(--background);
+    background-color: #fff;
     box-sizing: border-box;
 }
 
