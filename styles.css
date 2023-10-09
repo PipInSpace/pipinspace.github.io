@@ -121,6 +121,10 @@ a {
     .main_container {
         margin-top: 0;
     }
+
+    #footer_container {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 850px) {
