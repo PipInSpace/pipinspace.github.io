@@ -20,6 +20,10 @@
 }
 
 body {
+    --background_colour: #f1f1f1;
+    --text_colour: #0a0a0a;
+    --accent_colour: rgb(170, 80, 225);
+    --titlesize: 35px;
     background-color: rgb(87, 87, 87);
     background-image: url(img/Background.jpg);
     background-blend-mode:overlay;
@@ -27,15 +31,15 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    color: black;
+    color: var(--text_colour);
     margin: 0;
     padding: 0.1px;
     font-family: Roboto, sans-serif;
-    --background: #f1f1f1;
 }
 
 a {
     text-decoration: none;
+    color: var(--accent_colour);
 }
 .main_container {
     max-width: 1200px;
@@ -43,7 +47,7 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
-    background-color: var(--background);
+    background-color: var(--background_colour);
     overflow: hidden;
 }
 
@@ -75,7 +79,7 @@ a {
 }
 
 .title_description {
-    color: rgb(158, 92, 225);
+    color: var(--accent_colour);
     font-size: 18px;
     margin: 20px;
     margin-left: 5px;
@@ -83,8 +87,8 @@ a {
     padding-top: 10px;
     background-color: rgba(0, 0, 0, 0.348);
     backdrop-filter: blur(50px);
-    border-top: 2px solid var(--background);
-    border-right: 2px solid var(--background);
+    border-top: 2px solid var(--background_colour);
+    border-right: 2px solid var(--background_colour);
     position: relative;
 }
 
@@ -97,7 +101,7 @@ a {
 }
 
 .title_description_header a {
-    color: rgb(158, 92, 225);
+    color: var(--accent_colour);
 }
 
 .title_description_header h1 {
@@ -109,8 +113,8 @@ a {
 }
 
 .social_icons a i {
-    width: 40px;
-    height: 40px;
+    width: var(--titlesize);
+    height: var(--titlesize);
     margin-right: 5px;
     background-size:contain;
     background-position: center;
@@ -184,7 +188,7 @@ a {
 .stripe_container::before{
     width: 1300px;
     height: 150px;
-    background-color: #ddd;
+    background-color: var(--text_colour);
     position: absolute;
     transform: rotate(3deg);
     transform-origin: 0% 0%;
@@ -198,7 +202,7 @@ a {
 .stripe_container::after {
     width: 1300px;
     height: 150px;
-    background-color: #ddd;
+    background-color: var(--text_colour);
     position: absolute;
     transform: rotate(2deg);
     transform-origin: 100% 100%;
@@ -212,6 +216,7 @@ a {
 .stripe_container .main_body_title {
     position: absolute;
     top: 40px;
+    color: var(--background_colour);
 }
 
 .stripe_content {
@@ -219,7 +224,7 @@ a {
     padding-right: 20px;
     padding-bottom: 20px;
     width: 100%;
-    background-color: #ddd;
+    background-color: var(--text_colour);
     margin-top: 110px;
     box-sizing: border-box;
     display: flex;
@@ -239,10 +244,6 @@ a {
     box-sizing: border-box;
 }
 
-.stripe_text a {
-    color: rgb(83, 118, 166)
-}
-
 .stripe_image_container {
     width: calc(50% - 5px);
     height: auto;
@@ -259,7 +260,7 @@ a {
     padding: 12px 30px;
     height: 44px;
     background-color: rgb(39, 62, 95);
-    color: var(--background);
+    color: var(--background_colour);
     transition: 0.5s;
     box-sizing: border-box;
 }
@@ -271,9 +272,11 @@ a {
 .main_body_text {
     font-size: 18px;
     font-weight: 300;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
+    width: calc(100% - 20px);
+    border-left: 5px solid var(--accent_colour);
     box-sizing: border-box;
     margin-bottom: 20px;
     text-align: justify;
@@ -284,18 +287,20 @@ a {
     padding: 20px;
     padding-top: 0;
     display: block;
-    background-color: var(--background);
+    background-color: var(--background_colour);
 }
 
 .main_body_title {
     font-family: Roboto-Black;
-    font-size: 40px;
+    font-size: var(--titlesize);
     font-weight: 300;
     margin: auto;
     margin-bottom: 20px;
     margin-left: 20px;
     max-width: 1000px;
 }
+
+
 
 .project_description_title_container {
     width: 100%;
@@ -318,18 +323,11 @@ a {
     font-weight: 300;
 }
 
-.project_description_title_underline {
-    width: 100%;
-    height: 2px;
-    background-color: rgb(32, 32, 32);
-}
-
 .project_description_text {
     font-size: 25px;
     font-family: Roboto, monospace;
     background-image: image();
 }
-
 
 .projects_grid {
     display: flex;
@@ -375,7 +373,7 @@ a {
     border: 0;
     height: 2px;
     width: 100%;
-    background-color: black;
+    background-color: var(--text_colour);
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -388,8 +386,8 @@ a {
     margin-top: 16px;
     padding: 12px 30px;
     height:  44px;
-    background-color: black;
-    color: var(--background);
+    background-color: var(--text_colour);
+    color: var(--background_colour);
     transition: 0.5s;
     box-sizing: border-box;
 }
@@ -398,61 +396,13 @@ a {
     background-color: rgb(49, 49, 49);
 }
 
-.project_color_red {
-    background-color: rgb(255, 100, 100);
-}
-
-.project_color_red a {
-    background-color: rgb(43, 20, 20);
-}
-
-.project_color_red a:hover {
-    background-color: rgb(124, 50, 50);
-}
-
-.project_color_red hr {
-    background-color: rgb(124, 50, 50);
-}
-
-.project_color_green {
-    background-color: rgb(142, 226, 142);
-}
-
-.project_color_green a {
-    background-color: rgb(20, 43, 24);
-}
-
-.project_color_green a:hover {
-    background-color: rgb(50, 124, 62);
-}
-
-.project_color_green hr {
-    background-color: rgb(50, 124, 62);
-}
-
-.project_color_blue {
-    background-color: rgb(196, 213, 237);
-}
-
-.project_color_blue a {
-    background-color: rgb(39, 62, 95);
-}
-
-.project_color_blue a:hover {
-    background-color: rgb(83, 118, 166);
-}
-
-.project_color_blue hr {
-    background-color: rgb(27, 49, 80);
-}
-
 .project_center a {
-    background-color: var(--background);
-    color: black;
+    background-color: var(--background_colour);
+    color: var(--text_colour);
 }
 
 .project_center a:hover {
-    background-color: #ccc;
+    background-color: #acacac;
 }
 
 @media (max-width: 767px) {
@@ -474,8 +424,8 @@ a {
 
 .project_center {
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: var(--text_colour);
+    color: var(--background_colour);
 }
 
 @media (max-width: 480px) {
@@ -514,7 +464,10 @@ a {
     }
     .main_body_text {
         font-size: 15px;
-        padding-left: 10px;
+        margin-left: 10px;
+        width: calc(100%-10px);
+        border-left-width: 3px;
+        padding-left: 5px;
         padding-right: 10px;
     }
 }
@@ -525,7 +478,6 @@ a {
     display: flex;
     text-align: center;
     height: 100%;
-    margin-top: 10px;
 }
 
 .impressum>* {
@@ -534,20 +486,19 @@ a {
 
 .impressum a {
     text-decoration: none;
-    color: white;
-}
-
-.impressum a:hover {
-    color: rgb(255, 100, 100);
+    color: var(--accent_colour);
 }
 
 .footer {
-    padding-top: 2%;
-    background-color: var(--background);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--background_colour);
 }
 
 .clickableImg {
     width: 40px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    position: absolute;
+    bottom: 25px;
+    transform-origin: center;
+    transform: translateX(-20px);
 }
