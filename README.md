@@ -1,4 +1,2 @@
 # pipinspace.github.io
-cool doge
-we all like doge
-hail doge
+<a href="https://pipinspace.github.io">pipinspace.github.io</a>
