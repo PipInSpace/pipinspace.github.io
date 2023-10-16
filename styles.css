@@ -27,13 +27,11 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(50px);
     color: black;
     margin: 0;
     padding: 0.1px;
     font-family: Roboto, sans-serif;
     --background: #f1f1f1;
-
 }
 
 a {
