@@ -1,0 +1,47 @@
+.link_banner {
+    width: 100%;
+    background-color: var(--accent_colour);
+    padding-left: 20px;
+    font-size: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.link_banner a {
+    height: 100%;
+    display: inline-block;
+    font-family: Roboto-Bold, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 30px;
+    height: 44px;
+    color: var(--background_colour);
+    transition: 0.5s;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.link_banner a:hover {
+    background-color: #b86de6;
+}
+
+@media (max-width: 480px) {
+    .link_banner {
+        padding-left: 10px;
+    }
+    .link_banner a {
+        height: 36px;
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+}
+
+.pos_sticky {
+    position: fixed;
+    top: 0;
+    width: min(100%, 1200px);
+}
+
+.pos_sticky + div {
+    margin-top: 50px;
+}

@@ -8,6 +8,7 @@
   <title>I'm PipInSpace</title>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <link rel="stylesheet" type="text/css" href="styles/article_cards.css">
+  <link rel="stylesheet" type="text/css" href="styles/link_banner.css">
   <link rel="icon" type="image/x-icon" href="img/PipDecaprioTransparent.png">
 </head>
 
@@ -16,9 +17,9 @@
   <div class="main_container">
     <div class="main_title">
       <div class="title_image_container">
-        <img src="img/imageIonSolver.png" width="100%">
+        <img src="img/imageIonSolver.jpg" width="100%">
         <div class="title_image_gradient"
-          style="background-image: linear-gradient(to bottom, #f1f1f100, #f1f1f1ff, #f1f1f1ff); height: 10%; width: 100%; position: absolute; bottom: 0;">
+          style="background-image: linear-gradient(to bottom, #f1f1f100, #aa50e1ff); height: 2%; width: 100%; position: absolute; bottom: 0;">
         </div>
       </div>
       <div class="title_description_container">
@@ -36,6 +37,25 @@
       </div>
     </div>
 
+    <div class="link_banner">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#current_project_link">Current Project</a>
+      <script>
+        const stickyElement = document.querySelector('.link_banner');
+        const stickyTop = stickyElement.offsetTop;
+
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > stickyTop + 20) {
+            stickyElement.classList.add("pos_sticky")
+          } else {
+            stickyElement.classList.remove("pos_sticky");
+          }
+        });
+      </script>
+    </div>
+    
+
     <!--Main Body-->
     <div class="main_body">
       <div class="main_body_title">About Me</div>
@@ -44,9 +64,9 @@
         positive impact. I've worn many professional hats, from writing to problem-solving. Beyond work, I love nature, spending
         time with loved ones, and exploring new cultures. Let's connect and grow together!<br>
       </div>
-      <br>
+      <br id="current_project_link">
       <div class="stripe_container">
-        <div class="main_body_title">Current Thing:</div>
+        <div class="main_body_title">Current Project:</div>
         <div class="stripe_content">
           <div class="stripe_image_container">
             <img src="https://repository-images.githubusercontent.com/605166637/d1e24e9e-178e-4ca3-92d7-638996106ec6"

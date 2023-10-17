@@ -23,7 +23,7 @@ body {
     --background_colour: #f1f1f1;
     --text_colour: #0a0a0a;
     --accent_colour: #aa50e1;
-    --titlesize: 35px;
+    --titlesize: 32px;
     background-color: #6d6d6d;
     background-image: url(../img/Background.jpg);
     background-blend-mode:overlay;
@@ -58,11 +58,11 @@ a {
 }
 
 .title_image_container {
-    position: relative;
     width: 100%;
-    max-height: 1000px;
     pointer-events: none;
     overflow: hidden;
+    display: block;
+    line-height: 0;
 }
 
 .title_image_gradient {
@@ -85,7 +85,7 @@ a {
     margin-left: 5px;
     padding: 20px;
     padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0.348);
+    background-color: rgba(30, 30, 30, 0.2);
     backdrop-filter: blur(50px);
     border-top: 2px solid var(--background_colour);
     border-right: 2px solid var(--background_colour);
@@ -292,7 +292,18 @@ a {
     margin: auto;
     margin-bottom: 20px;
     margin-left: 20px;
-    max-width: 1000px;
+}
+
+@media (max-width: 1220px) {
+    .stripe_image_container {
+        width: 100%;
+    }
+
+    .stripe_text {
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px) {

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - PipInSpace</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/article_cards.css">
+  <link rel="stylesheet" type="text/css" href="styles/link_banner.css">
+  <link rel="icon" type="image/x-icon" href="img/PipDecaprioTransparent.png">
+</head>
+
+<body>
+  <!--Title-->
+  <div class="main_container">
+    <div class="link_banner">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#current_project_link">Current Project</a>
+      <script>
+        const stickyElement = document.querySelector('.link_banner');
+
+        window.addEventListener('scroll', function () {
+          const stickyTop = stickyElement.offsetTop;
+          if (window.pageYOffset > stickyTop + 22) {
+            stickyElement.classList.add("pos_sticky")
+          } else {
+            stickyElement.classList.remove("pos_sticky");
+          }
+        });
+      </script>
+    </div>
+
+    <!--Main Body-->
+    <div class="main_body">
+      <div class="main_body_title" style="margin-top: 10px;">My Blog</div>
+      <div class="main_body_text">
+        Thank you for finding my Blog! On occasion, I might post something here about my projects, but I am much more
+        active on
+        <a href="https://mastodon.social/@pipinspace">Mastodon</a>. You can follow me there!
+      </div>
+      <div class="main_body_title">Current: Nothing</div>
+      <div class="main_body_text">
+        There is nothing here. For now. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illum pariatur
+        officiis repudiandae? Eius et veniam veritatis rem rerum eveniet aut autem, vel molestiae dolor quibusdam iste
+        ea. Ducimus corporis alias quo illum, molestiae nesciunt sapiente iste natus qui impedit repudiandae dignissimos
+        fuga exercitationem sint asperiores esse magni vitae eveniet officiis ullam maxime aperiam rem unde iure. Autem
+        laborum obcaecati magni, iusto odio officiis! Perferendis nam exercitationem aperiam ipsa. Doloremque mollitia
+        cumque nobis quod molestiae repellendus. Dolore suscipit provident at delectus amet nostrum, itaque cumque error
+        eligendi quidem reprehenderit cum esse quas sit doloremque! Similique accusamus cumque magni nemo fugiat?
+      </div>
+      <br>
+
+
+      <div class="main_body_title">Blog posts:</div>
+      <div class="main_body_articles_list">
+
+        <div class="articles_grid">
+          </article>
+          <article class="article article_color_blue article_top">
+            <div class="article_description_title_container">
+              <div class="article_description_title">
+                Nothing
+              </div>
+              <div class="article_description_title_date">2023</div>
+            </div>
+            <hr>
+            <p>
+              There is nothing here. For now.
+            </p>
+            <a href="">Read</a>
+          </article>
+        </div>
+      </div>
+      <div style="display: none;"><!--Mastodon Verification-->
+        <a rel="me" href="https://mastodon.social/@pipinspace">Mastodon</a>
+      </div>
+
+
+
+    </div>
+  </div>
+  <div class="main_container" style="position: relative;" id="footer_container">
+    <div class="footer">
+      <div class="impressum">
+        <div class="impressum_column">
+          Navigation<br>
+          <a class="a_impressum" href="index.html">Home</a><br>
+          <a class="a_impressum" href="../index.html">Back</a><br>
+          <a class="a_impressum" href="privacy.html">Privacy Notice</a><br>
+          <a class="a_impressum" href="https://pipinspace.github.io">Home again</a><br>
+        </div>
+        <div class="impressum_column" style="text-align: center; padding: 0;">
+          Copyright © 2022-2023 by PipInSpace.<br> All Rights Reserved.<br>
+          <a href="https://pipinspace.github.io"><img class="clickableImg" src="img/PipDecaprioTransparent.png"
+              alt="profile pic" style="border-radius: 400px;">
+          </a><br>
+        </div>
+        <div class="impressum_column">
+          Impressum<br>
+          Address
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
