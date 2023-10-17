@@ -1,31 +1,31 @@
 /* General Setup */
 @font-face {
     font-family: "Roboto Mono";
-    src: url(fonts/RobotoMono-VariableFont_wght.ttf) format("truetype");
+    src: url(../fonts/RobotoMono-VariableFont_wght.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url(fonts/Roboto-Regular.ttf), url(fonts/Roboto-Thin.ttf), url(fonts/Roboto-ThinItalic.ttf), url(fonts/Roboto-Medium.ttf), url(fonts/Roboto-MediumItalic.ttf), url(fonts/Roboto-Light.ttf), url(fonts/Roboto-LightItalic.ttf), url(fonts/Roboto-Italic.ttf), url(fonts/Roboto-Bold.ttf), url(fonts/Roboto-BoldItalic.ttf), url(fonts/Roboto-Black.ttf), url(fonts/Roboto-BlackItalic.ttf);
+    src: url(../fonts/Roboto-Regular.ttf), url(../fonts/Roboto-Thin.ttf), url(../fonts/Roboto-ThinItalic.ttf), url(../fonts/Roboto-Medium.ttf), url(../fonts/Roboto-MediumItalic.ttf), url(../fonts/Roboto-Light.ttf), url(../fonts/Roboto-LightItalic.ttf), url(../fonts/Roboto-Italic.ttf), url(../fonts/Roboto-Bold.ttf), url(../fonts/Roboto-BoldItalic.ttf), url(../fonts/Roboto-Black.ttf), url(../fonts/Roboto-BlackItalic.ttf);
 }
 
 @font-face {
     font-family: "Roboto-Bold";
-    src: url(fonts/Roboto-Bold.ttf) format("truetype");
+    src: url(../fonts/Roboto-Bold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Roboto-Black";
-    src: url(fonts/Roboto-Black.ttf) format("truetype");
+    src: url(../fonts/Roboto-Black.ttf) format("truetype");
 }
 
 body {
     --background_colour: #f1f1f1;
     --text_colour: #0a0a0a;
-    --accent_colour: rgb(170, 80, 225);
+    --accent_colour: #aa50e1;
     --titlesize: 35px;
-    background-color: rgb(87, 87, 87);
-    background-image: url(img/Background.jpg);
+    background-color: #6d6d6d;
+    background-image: url(../img/Background.jpg);
     background-blend-mode:overlay;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -171,12 +171,13 @@ a {
 }
 
 
-/* Main Content/Projects */
+/* Main Content */
 
 .main_body {
     margin-top: 10px;
 }
 
+/* Stripe section */
 .stripe_container {
     width: 100%;
     position: relative;
@@ -269,6 +270,8 @@ a {
     background-color: rgb(83, 118, 166)
 }
 
+/* End stripe section */
+
 .main_body_text {
     font-size: 18px;
     font-weight: 300;
@@ -282,14 +285,6 @@ a {
     text-align: justify;
 }
 
-.main_body_projects_list {
-    overflow: hidden;
-    padding: 20px;
-    padding-top: 0;
-    display: block;
-    background-color: var(--background_colour);
-}
-
 .main_body_title {
     font-family: Roboto-Black;
     font-size: var(--titlesize);
@@ -300,118 +295,7 @@ a {
     max-width: 1000px;
 }
 
-
-
-.project_description_title_container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.project_description_title {
-    font-size: 24px;
-    font-weight: 500;
-    font-family: Roboto-Black;
-    display: flex;
-    align-items: center;
-}
-
-.project_description_title_date {
-    font-family: Roboto Mono, monospace;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.project_description_text {
-    font-size: 25px;
-    font-family: Roboto, monospace;
-    background-image: image();
-}
-
-.projects_grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 100%;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.project {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    padding: 20px;
-    width: calc(50% - 5px);
-    background-color: #ddd;
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
-    box-sizing: border-box;
-    font-size: 18px;
-    line-height: 1.4;
-    overflow: hidden;
-}
-
-.project p {
-    width: 100%;
-    margin-bottom: auto;
-    font-family: Roboto, sans-serif;
-    font-weight: 300;
-}
-
-.project i {
-    display: flex;
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
-}
-
-.project hr {
-    border: 0;
-    height: 2px;
-    width: 100%;
-    background-color: var(--text_colour);
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.project a {
-    display: inline-block;
-    font-family: Roboto-Bold, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 16px;
-    padding: 12px 30px;
-    height:  44px;
-    background-color: var(--text_colour);
-    color: var(--background_colour);
-    transition: 0.5s;
-    box-sizing: border-box;
-}
-
-.project a:hover {
-    background-color: rgb(49, 49, 49);
-}
-
-.project_center a {
-    background-color: var(--background_colour);
-    color: var(--text_colour);
-}
-
-.project_center a:hover {
-    background-color: #acacac;
-}
-
 @media (max-width: 767px) {
-    .project {
-        width: 100%;
-    }
-    .project_top {
-        margin-top: 0;
-    }
     .stripe_image_container {
         width: 100%;
     }
@@ -422,30 +306,11 @@ a {
     }
 }
 
-.project_center {
-    width: 100%;
-    background-color: var(--text_colour);
-    color: var(--background_colour);
-}
-
 @media (max-width: 480px) {
     .main_body_title {
         margin-left: 10px;
         margin-bottom: 10px;
         font-size: 24px;
-    }
-    .main_body_projects_list {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .project {
-        font-size: 15px;
-        padding: 10px;
-    }
-    .project a {
-        height: 36px;
-        padding: 8px 10px;
-        font-size: 15px;
     }
     .stripe_content {
         padding-left: 10px;
@@ -466,7 +331,6 @@ a {
         font-size: 15px;
         margin-left: 10px;
         width: calc(100%-10px);
-        border-left-width: 3px;
         padding-left: 5px;
         padding-right: 10px;
     }
@@ -476,12 +340,15 @@ a {
 /* Impressum/Footer */
 .impressum {
     display: flex;
-    text-align: center;
-    height: 100%;
 }
 
 .impressum>* {
     flex-basis: 100%;
+}
+
+.impressum_column {
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 
 .impressum a {
@@ -497,8 +364,25 @@ a {
 
 .clickableImg {
     width: 40px;
-    position: absolute;
+    margin-top: 5px;
+    margin-bottom: -4px;
+    /*position: absolute;
     bottom: 25px;
     transform-origin: center;
-    transform: translateX(-20px);
+    transform: translateX(-20px);*/
+}
+
+@media (max-width: 767px) {
+    .impressum_column {
+        width: 100%;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .impressum_column {
+        padding-left: 10px;
+        font-size: 15px;
+    }
 }
