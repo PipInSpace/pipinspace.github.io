@@ -47,6 +47,10 @@ a:hover {
     color: var(--accent_colour_highlight);
 }
 
+a:visited {
+    text-decoration: underline;
+}
+
 .main_container {
     max-width: 1200px;
     margin: auto;
