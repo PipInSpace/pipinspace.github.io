@@ -22,7 +22,7 @@
 }
 
 .link_banner a:hover {
-    background-color: #b86de6;
+    background-color: var(--accent_colour_highlight);
 }
 
 @media (max-width: 480px) {

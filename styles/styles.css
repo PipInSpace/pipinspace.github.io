@@ -23,6 +23,7 @@ body {
     --background_colour: #f1f1f1;
     --text_colour: #0a0a0a;
     --accent_colour: #aa50e1;
+    --accent_colour_highlight: #b86de6;
     --titlesize: 32px;
     background-color: #6d6d6d;
     background-image: url(../img/Background.jpg);
@@ -41,6 +42,11 @@ a {
     text-decoration: none;
     color: var(--accent_colour);
 }
+
+a:hover {
+    color: var(--accent_colour_highlight);
+}
+
 .main_container {
     max-width: 1200px;
     margin: auto;
@@ -360,11 +366,6 @@ a {
 .impressum_column {
     padding-left: 20px;
     box-sizing: border-box;
-}
-
-.impressum a {
-    text-decoration: none;
-    color: var(--accent_colour);
 }
 
 .footer {
