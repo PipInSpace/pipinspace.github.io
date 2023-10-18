@@ -19,12 +19,21 @@
     src: url(../fonts/Roboto-Black.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "Lora";
+    src: url(../fonts/Lora-VariableFont_wght.ttf) format("truetype");
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     --background_colour: #f1f1f1;
     --text_colour: #0a0a0a;
     --accent_colour: #aa50e1;
     --accent_colour_highlight: #b86de6;
-    --titlesize: 32px;
+    --titlesize: 3.5rem;
     background-color: #6d6d6d;
     background-image: url(../img/Background.jpg);
     background-blend-mode:overlay;
@@ -41,6 +50,7 @@ body {
 a {
     text-decoration: none;
     color: var(--accent_colour);
+    font-weight: 700;
 }
 
 a:hover {
@@ -52,7 +62,7 @@ a:visited {
 }
 
 .main_container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -90,7 +100,9 @@ a:visited {
 
 .title_description {
     color: var(--accent_colour);
-    font-size: 18px;
+    font-size: 2.0rem;
+    font-family: Lora, serif;
+    font-weight: 600;
     margin: 20px;
     margin-left: 5px;
     padding: 20px;
@@ -105,13 +117,9 @@ a:visited {
 .title_description_header {
     margin: 0;
     margin-bottom: 5px;
-    font-size: 40px;
+    font-size: var(--titlesize);
     font-family: Roboto-Black;
-    font-weight: 300;
-}
-
-.title_description_header a {
-    color: var(--accent_colour);
+    font-weight: 700;
 }
 
 .title_description_header h1 {
@@ -132,7 +140,7 @@ a:visited {
     display: inline-block;
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1020px) {
     .main_container {
         margin-top: 0;
     }
@@ -153,7 +161,7 @@ a:visited {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .main_title {
         height: 300px;
     }
@@ -168,11 +176,11 @@ a:visited {
     }
 
     .title_description {
-        font-size: 15px;
+        font-size: 1.5rem;
         margin: 10px;
     }
     .title_description_header {
-        font-size: 24px;
+        font-size: 2.0rem;
     }
     .social_icons a i {
         width: 20px;
@@ -246,11 +254,9 @@ a:visited {
     width: calc(50% - 5px);
     margin-left: 10px;
     padding: 20px;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: Roboto, sans-serif;
-    text-align: justify;
-    text-align-last: none;
+    font-size: 2.0rem;
+    font-weight: 400;
+    font-family: Lora, serif;
     background-color: #fff;
     box-sizing: border-box;
 }
@@ -283,8 +289,9 @@ a:visited {
 /* End stripe section */
 
 .main_body_text {
-    font-size: 18px;
+    font-size: 2.0rem;
     font-weight: 300;
+    line-height: 1.3;
     margin-left: 20px;
     padding-left: 10px;
     padding-right: 30px;
@@ -292,7 +299,7 @@ a:visited {
     border-left: 5px solid var(--accent_colour);
     box-sizing: border-box;
     margin-bottom: 20px;
-    text-align: justify;
+    font-family: Lora, serif;
 }
 
 .main_body_title {
@@ -328,7 +335,7 @@ a:visited {
     width: calc(40px*2.5);
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1020px) {
     .stripe_image_container {
         width: 100%;
     }
@@ -351,20 +358,19 @@ a:visited {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .main_body_title {
         margin-left: 10px;
         margin-bottom: 10px;
-        font-size: 24px;
+        font-size: 2.0rem;
     }
     .stripe_content {
         padding-left: 10px;
         padding-right: 10px;
         margin-top: 80px;
-        font-size: 15px;
     }
     .stripe_text {
-        font-size: 15px;
+        font-size: 1.5rem;
         padding: 10px;
     }
     .link_button {
@@ -385,6 +391,9 @@ a:visited {
 /* Impressum/Footer */
 .impressum {
     display: flex;
+    font-size: 1.5rem;
+    font-family: Roboto-Black;
+    font-weight: 300;
 }
 
 .impressum>* {
@@ -394,6 +403,10 @@ a:visited {
 .impressum_column {
     padding-left: 20px;
     box-sizing: border-box;
+}
+
+.impressum_column a {
+    font-weight: 300;
 }
 
 .footer {
@@ -420,7 +433,7 @@ a:visited {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .impressum_column {
         padding-left: 10px;
         font-size: 15px;

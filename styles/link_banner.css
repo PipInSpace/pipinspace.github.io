@@ -1,7 +1,6 @@
 .link_banner {
     width: 100%;
     background-color: var(--accent_colour);
-    padding-left: 20px;
     font-size: 0;
     box-sizing: border-box;
     z-index: 1000;
@@ -10,10 +9,10 @@
 .link_banner a {
     height: 100%;
     display: inline-block;
-    font-family: Roboto-Bold, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 30px;
+    font-family: Roboto-Black, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 12px 12px;
     height: 44px;
     color: var(--background_colour);
     transition: 0.5s;
@@ -21,25 +20,29 @@
     cursor: pointer;
 }
 
-.link_banner a:hover {
-    background-color: var(--accent_colour_highlight);
+.link_banner a:first-child {
+    padding-left: 20px;
 }
 
-@media (max-width: 480px) {
-    .link_banner {
-        padding-left: 10px;
-    }
+.link_banner a:hover {
+    color: #ddd;
+}
+
+@media (max-width: 500px) {
     .link_banner a {
         height: 36px;
         padding: 8px 10px;
         font-size: 15px;
+    }
+    .link_banner a:first-child {
+        padding-left: 10px;
     }
 }
 
 .pos_sticky {
     position: fixed;
     top: 0;
-    width: min(100%, 1200px);
+    width: min(100%, 1000px);
 }
 
 .pos_sticky + div {
