@@ -265,7 +265,9 @@ a:visited {
     width: calc(50% - 5px);
     height: auto;
     flex-shrink: 0;
-    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .link_button {
