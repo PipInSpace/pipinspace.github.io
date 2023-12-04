@@ -10,9 +10,7 @@
   <meta content="I'm PipInSpace 👋" property="og:title" />
   <meta content="This is the personal homepage of PipInSpace" property="og:description" />
   <meta content="https://pipinspace.github.io/index.html" property="og:url" />
-  <meta content="https://pipinspace.github.io/img/BackgroundEmbed.jpg" property="og:image" />
   <meta content="#aa50e1" data-react-helmet="true" name="theme-color" />
-  <meta name="twitter:image" content="https://pipinspace.github.io/img/BackgroundEmbed.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <link rel="stylesheet" type="text/css" href="styles/webring.css">
@@ -23,10 +21,15 @@
   <div class="main_body">
     <!--Main Body-->
     <div class="title-image">
-      <img src="img/Background.png">
+      <img src="img/Background.png" class="no-select">
       <h1>Hi, I'm PipInSpace!</h1>
-      <p>I do rust programming, computational fluid dynamics and a bit of game developement! Currently working on IonSolver, a
-      magnetohydrodynamic simulation software.</p>
+      <p>I do rust programming, computational fluid dynamics and a bit of game developement! Currently working on
+        IonSolver, a
+        magnetohydrodynamic simulation software.</p>
+      <div class="title-links">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+      </div>
       <div class="social_icons">
         <a href="https://github.com/PipInSpace"><i style="background-image: url(img/github.svg);"></i></a>
         <a href="https://mastodon.social/@pipinspace"><i style="background-image: url(img/mastodon.svg);"></i></a>
@@ -34,7 +37,7 @@
             style="background-image: url(img/LogoIonSolverWhite.svg); background-size: 120%;"></i></a>
       </div>
     </div>
-    
+
     <h1>About Me</h1>
     <p>
       Hi, I'm [Your Name], a lifelong learner and creative soul. I'm passionate about storytelling, technology, and
@@ -42,6 +45,10 @@
       positive impact. I've worn many professional hats, from writing to problem-solving. Beyond work, I love nature,
       spending
       time with loved ones, and exploring new cultures. Let's connect and grow together!<br>
+    </p>
+    <p class="main_body_quote">
+      „This is a very fancy quote“<br>
+      - Me
     </p>
 
     <h1>My Projects</h1>
@@ -68,21 +75,22 @@
     </div>
 
     <div class="impressum">
-      <div class="impressum_column">
+      <div class="impressum_column impressum_left">
         <span>Navigation</span><br>
         <a class="a_impressum" href="index.html">Home</a><br>
         <a class="a_impressum" href="../index.html">Back</a><br>
         <a class="a_impressum" href="privacy.html">Privacy Notice</a><br>
         <a class="a_impressum" href="https://pipinspace.github.io">Home again</a><br>
       </div>
-      <div class="impressum_column" style="text-align: center; padding: 0;">
+      <div class="impressum_column impressum_center">
         <span>Copyright © 2022-2023</span><br>
         by PipInSpace.<br> All Rights Reserved.<br>
-        <a href="https://pipinspace.github.io"><img class="clickableImg" src="img/PixelArtPipTransparent.png"
-            alt="profile pic" style="border-radius: 400px;">
+        <a href="https://pipinspace.github.io">
+          <img class="clickableImg" src="img/PixelArtPipTransparent.png" alt="profile pic"
+            style="border-radius: 400px;">
         </a><br>
       </div>
-      <div class="impressum_column">
+      <div class="impressum_column impressum_right">
         <span>Impressum</span><br>
         Address
       </div>
