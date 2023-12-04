@@ -15,189 +15,76 @@
   <meta name="twitter:image" content="https://pipinspace.github.io/img/BackgroundEmbed.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <link rel="stylesheet" type="text/css" href="styles/article_cards.css">
-  <link rel="stylesheet" type="text/css" href="styles/link_banner.css">
+  <link rel="stylesheet" type="text/css" href="styles/webring.css">
   <link rel="icon" type="image/x-icon" href="img/PixelArtPipTransparent.png">
 </head>
 
 <body>
-  <!--Title-->
-  <div class="main_container">
-    <div class="main_title">
-      <div class="title_image_container">
-        <img src="img/imageIonSolver.jpg" width="100%">
-        <div class="title_image_gradient"
-          style="background-image: linear-gradient(to bottom, #f1f1f100, #aa50e1ff); height: 2%; width: 100%; position: absolute; bottom: 0;">
-        </div>
+  <div class="main_body">
+    <!--Main Body-->
+    <div class="title-image">
+      <img src="img/Background.png">
+      <h1>Hi, I'm PipInSpace!</h1>
+      <p>I do rust programming, computational fluid dynamics and a bit of game developement! Currently working on IonSolver, a
+      magnetohydrodynamic simulation software.</p>
+      <div class="social_icons">
+        <a href="https://github.com/PipInSpace"><i style="background-image: url(img/github.svg);"></i></a>
+        <a href="https://mastodon.social/@pipinspace"><i style="background-image: url(img/mastodon.svg);"></i></a>
+        <a href="https://github.com/PipInSpace/IonSolver"><i
+            style="background-image: url(img/LogoIonSolverWhite.svg); background-size: 120%;"></i></a>
       </div>
-      <div class="title_description_container">
-        <div class="title_description">
-          <h1 class="title_description_header">
-            I'm <a href="https://github.com/PipInSpace">PipInSpace</a> 👋
-          </h1>
-          I do rust programming, computational fluid dynamics and a bit of game developement! Currently working on IonSolver, a magnetohydrodynamic simulation software.
-          <div class="social_icons">
-            <a href="https://github.com/PipInSpace"><i style="background-image: url(img/github.svg);"></i></a>
-            <a href="https://mastodon.social/@pipinspace"><i style="background-image: url(img/mastodon.svg);"></i></a>
-            <a href="https://github.com/PipInSpace/IonSolver"><i style="background-image: url(img/LogoIonSolverWhite.svg); background-size: 120%;"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="link_banner">
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="#current_project_link">Current Project</a>
-      <script>
-        const stickyElement = document.querySelector('.link_banner');
-        const stickyTop = stickyElement.offsetTop;
-
-        window.addEventListener('scroll', function () {
-          if (window.pageYOffset > stickyTop + 20) {
-            stickyElement.classList.add("pos_sticky")
-          } else {
-            stickyElement.classList.remove("pos_sticky");
-          }
-        });
-      </script>
     </div>
     
+    <h1>About Me</h1>
+    <p>
+      Hi, I'm [Your Name], a lifelong learner and creative soul. I'm passionate about storytelling, technology, and
+      making a
+      positive impact. I've worn many professional hats, from writing to problem-solving. Beyond work, I love nature,
+      spending
+      time with loved ones, and exploring new cultures. Let's connect and grow together!<br>
+    </p>
 
-    <!--Main Body-->
-    <div class="main_body">
-      <div class="main_body_title">About Me</div>
-      <div class="main_body_text">
-        Hi, I'm [Your Name], a lifelong learner and creative soul. I'm passionate about storytelling, technology, and making a
-        positive impact. I've worn many professional hats, from writing to problem-solving. Beyond work, I love nature, spending
-        time with loved ones, and exploring new cultures. Let's connect and grow together!<br>
-      </div>
-      <br id="current_project_link">
-      <div class="stripe_container">
-        <div class="main_body_title">Current Project:</div>
-        <div class="stripe_content">
-          <div class="stripe_image_container">
-            <img src="https://repository-images.githubusercontent.com/605166637/d1e24e9e-178e-4ca3-92d7-638996106ec6"
-              style="width: 100%; height: auto;">
-          </div>
-          <div class="stripe_text" style="position: relative;">
-            IonSolver is a magnetohydrodynamic simulation software utilising the Lattice-Boltzmann-Model for fluid
-            interaction. The software is written in the rust programming language and uses OpenCL integration for parallelization.
-            Most kernel code is taken with permission from <a href="https://github.com/ProjectPhysX/FluidX3D">FluidX3D</a>, 
-            the simulation setup, rendering etc. are all written by us. It aims to provide a physically accurate and very fast simulation, 
-            with support for solid-fluid interaction and multiple boundary conditions. You can find it <a href="https://github.com/PipInSpace/IonSolver">on GitHub</a>.
-          </div>
-         
-          
-        </div>
-      </div>
+    <h1>My Projects</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime iure harum, saepe nobis porro esse
+      cupiditate eveniet quos. Ullam inventore cupiditate natus nobis dicta eveniet veniam vel exercitationem nihil?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laudantium reiciendis odio dolorum, unde
+      nesciunt cupiditate ratione ea nam accusamus nemo quo, nobis autem facilis corporis, a obcaecati consequuntur
+      iusto ipsam est. Explicabo quae ut deserunt illum suscipit corrupti natus non quidem doloremque vitae, facilis
+      voluptates officiis id aperiam nostrum! Incidunt molestiae voluptatibus, maiores inventore deleniti atque
+      molestias magni soluta nulla sit! Consequatur eaque voluptate impedit tempora sapiente, odio dolores incidunt
+      nobis repellendus ducimus doloremque enim saepe quia exercitationem fugit accusantium sunt veniam nulla modi
+      velit eos dignissimos nostrum neque? Excepturi nisi error quia hic maxime harum iusto minus incidunt.
+    </p>
 
-      <div class="main_body_title">My Projects</div>
-      <div class="main_body_articles_list">
-
-        <div class="articles_grid">
-          </article>
-          <article class="article article_color_blue article_top">
-            <div class="article_description_title_container">
-              <div class="article_description_title">
-                IonSolver
-              </div>
-              <div class="article_description_title_date">2023</div>
-            </div>
-            <hr>
-            <p>
-              IonSolver is a magnetohydrodynamic simulation software utilising the Lattice-Boltzmann-Model for fluid
-              interaction.
-            </p>
-            <a href="https://github.com/PipInSpace/IonSolver">On GitHub</a>
-
-          </article>
-          <article class="article article_color_red">
-            <div class="article_description_title_container">
-
-              <div class="article_description_title">
-                SCS
-              </div>
-              <div class="article_description_title_date">2023</div>
-            </div>
-            <hr>
-            <p>
-              SCS is a space battle simulator with near-future technology setting aiming to achieve relatively realistic
-              space combat. It is a open source game made in the Unity game engine. Co-author is FN_2189
-            </p>
-            <a href="https://github.com/FN-2189/SCS">On GitHub</a>
-
-          </article>
-          <article class="article article_center">
-            <div class="article_description_title_container">
-              <div class="article_description_title">pipinspace.<wbr>github.<wbr>io</div>
-              <div class="article_description_title_date">2023</div>
-            </div>
-            <hr style="background-color: var(--background_colour);">
-            <p>
-              This website with all its resources. Currently very Work-In-Progress.
-            </p>
-            <a href="https://github.com/PipInSpace/pipinspace.github.io">On GitHub</a>
-
-          </article>
-          <article class="article">
-            <div class="article_description_title_container">
-              <div class="article_description_title">README.md</div>
-              <div class="article_description_title_date">2022</div>
-            </div>
-            <hr>
-            <p>
-              My github README.md file. Colors are slightly broken at the moment due to GitHub Markdown incompatability
-            </p>
-            <a href="https://github.com/PipInSpace/PipInSpace">On GitHub</a>
-
-          </article>
-          <article class="article">
-            <div class="article_description_title_container">
-              <div class="article_description_title">SCS Assets</div>
-              <div class="article_description_title_date">2023</div>
-            </div>
-            <hr>
-            <p>
-              The Asset repository of SCS, currently private due to technical difficulties.
-            </p>
-            <a href="https://github.com/FN-2189/SCS">On GitHub</a>
-
-          </article>
-        </div>
-      </div>
-      <div style="display: none;"><!--Mastodon Verification-->
-        <a rel="me" href="https://mastodon.social/@pipinspace">Mastodon</a>
-      </div>
-
-      <div class="webring">
-        <a href="">&lt <img src=""></a>
-        <a href=""><img src="webring/logo.png"></a>
-        <a href="https://tudbut.de"><img src="http://tudbut.de:81/webring/logo.png"> &gt</a>
-      </div>
-
+    <div style="display: none;"><!--Mastodon Verification-->
+      <a rel="me" href="https://mastodon.social/@pipinspace">Mastodon</a>
     </div>
-  </div>
-  <div class="main_container" style="position: relative;" id="footer_container">
-    <div class="footer">
-      <div class="impressum">
-        <div class="impressum_column">
-          Navigation<br>
-          <a class="a_impressum" href="index.html">Home</a><br>
-          <a class="a_impressum" href="../index.html">Back</a><br>
-          <a class="a_impressum" href="privacy.html">Privacy Notice</a><br>
-          <a class="a_impressum" href="https://pipinspace.github.io">Home again</a><br>
-        </div>
-        <div class="impressum_column" style="text-align: center; padding: 0;">
-          Copyright © 2022-2023 by PipInSpace.<br> All Rights Reserved.<br>
-          <a href="https://pipinspace.github.io"><img class="clickableImg" src="img/PixelArtPipTransparent.png"
-              alt="profile pic" style="border-radius: 400px;">
-          </a><br>
-        </div>
-        <div class="impressum_column">
-          Impressum<br>
-          Address
-        </div>
+
+    <div class="webring">
+      <a href="">&lt <img src=""></a>
+      <a href=""><img src="webring/logo.png"></a>
+      <a href="https://tudbut.de"><img src="http://tudbut.de:81/webring/logo.png"> &gt</a>
+    </div>
+
+    <div class="impressum">
+      <div class="impressum_column">
+        <span>Navigation</span><br>
+        <a class="a_impressum" href="index.html">Home</a><br>
+        <a class="a_impressum" href="../index.html">Back</a><br>
+        <a class="a_impressum" href="privacy.html">Privacy Notice</a><br>
+        <a class="a_impressum" href="https://pipinspace.github.io">Home again</a><br>
+      </div>
+      <div class="impressum_column" style="text-align: center; padding: 0;">
+        <span>Copyright © 2022-2023</span><br>
+        by PipInSpace.<br> All Rights Reserved.<br>
+        <a href="https://pipinspace.github.io"><img class="clickableImg" src="img/PixelArtPipTransparent.png"
+            alt="profile pic" style="border-radius: 400px;">
+        </a><br>
+      </div>
+      <div class="impressum_column">
+        <span>Impressum</span><br>
+        Address
       </div>
     </div>
   </div>
