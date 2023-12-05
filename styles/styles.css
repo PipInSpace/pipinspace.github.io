@@ -60,7 +60,6 @@ body {
 a {
     text-decoration: none;
     color: var(--accent_colour);
-    font-weight: 700;
 }
 
 a:hover {
@@ -88,6 +87,15 @@ p {
     margin: 0 10px 25px 10px;
     box-sizing: border-box;
     text-align: justify;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+p a {
+    /* Bold links in text */
+    font-weight: 700;
 }
 
 .no-select {
@@ -134,7 +142,7 @@ p {
     position: absolute;
     left: 10px;
     bottom: 13px;
-    font-family: 'Moderat Medium', sans-serif;
+    font-family: 'Moderat Bold', sans-serif;
 }
 
 .title-links a {
@@ -146,17 +154,6 @@ p {
     right: 0;
     bottom: 8px;
     font-size: 0;
-}
-
-.social_icons a i {
-    width: var(--titlesize);
-    height: var(--titlesize);
-
-    margin-right: 8px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
 }
 
 .social_icons a svg {
@@ -197,6 +194,11 @@ p {
     font-family: 'CMU Serif Roman', serif;
 }
 
+.text-padding {
+    margin: 0 10px 25px 10px;
+    box-sizing: border-box;
+}
+
 
 /* Impressum/Footer */
 .impressum {
@@ -206,7 +208,6 @@ p {
     font-weight: 300;
     font-size: 0.9rem;
 }
-
 
 .impressum_column {
     margin: 0 10px 0 10px;
