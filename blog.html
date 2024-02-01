@@ -63,15 +63,32 @@
             active on <a href="https://mastodon.social/@pipinspace">Mastodon</a>. You can follow me there!
         </p>
         
-        <h1>Current: <a href="nothing.html">Nothing</a></h1>
-<p>There is nothing here. For now.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illum pariatur officiis repudiandae? Eius et veniam veritatis rem rerum eveniet aut autem, vel molestiae dolor quibusdam iste ea. Ducimus corporis alias quo illum, molestiae nesciunt sapiente iste natus qui impedit repudiandae dignissimos fuga exercitationem sint asperiores esse magni vitae eveniet officiis ullam maxime aperiam rem unde iure. Autem laborum obcaecati magni, iusto odio officiis! Perferendis nam exercitationem aperiam ipsa. Doloremque mollitia cumque nobis quod molestiae repellendus. Dolore suscipit provident at delectus amet nostrum, itaque cumque error eligendi quidem reprehenderit cum esse quas sit doloremque! Similique accusamus cumque magni nemo fugiat? </p>
+        <h1>Current: <a href="hello-world.html">Hello World</a></h1>
+<p>Hi, this is the first real post on this blog!</p>
+<p>This blog is generated with my own static site generator <a href="https://github.com/PipInSpace/pagebuild">pagebuild</a>. 
+It generates blog post html files and a blog index from html templates and markdown files. The output of the parser
+is minimal and practically all styling can be done over the template files and CSS. Template files are largely regular
+html, sections to be replaced are marked with {{tags}}. </p>
+<p>The blog_index template supports the tags {{current_post}} (The most recent blog post, formatted with title, content and date)
+and {{​all_posts}}, a table/list of links to all posts with their creation date. The template blog_post supports the three
+tags {{date}} (The post's creation date), {{title}} (The post's human-readable title, the filename of it's  Markdown file)
+and {{content}}, the post's parsed content.</p>
+<p>Additionally, you can define &quot;components&quot; with the {{tag}}-syntax through a components.html file. These are tiny snippets that let
+you reuse markdown and html easily and can be inserted in both the template files and the markdown source files. They even work
+recursively, but I wouldn't recommend putting a component within itself (The system can handle this somewhat and won't crash, but
+it's still not pretty). For examples, visit the example file on <a href="https://github.com/PipInSpace/pipinspace.github.io/blob/main/text-src/components.html">GitHub</a>.</p>
+<p><a href="https://github.com/PipInSpace/pagebuild">pagebuild</a> is still very much a WIP. In the future I might add support for {{​all_posts}}
+lists on post pages and a more extensible syntax. The components system I have thrown together is relatively robust, but including
+the all_posts tag here in the Markdown without a zero-width space to throw off the replace function would get &quot;messy&quot; in the current
+approach. I might have to rework that :). Maybe add conditions to the components system? We'll see.</p>
+<p>Thanks for Reading! - PipInSpace</p>
 
-<div class="blog_footer">01.02.2024 - 16:32</div>
+<div class="blog_footer">01.02.2024 - 18:43</div>
 
         <h1>All Posts</h1>
         <table class="blog_post_list">
-<tr><td><a href="nothing.html">Nothing</a></td><td> 01.02.2024 - 16:32</td></tr>
+<tr><td><a href="hello-world.html">Hello World</a></td><td> 01.02.2024 - 18:43</td></tr>
+<tr><td><a href="nothing.html">Nothing</a></td><td> 01.02.2024 - 18:39</td></tr>
 </table>
 
         
