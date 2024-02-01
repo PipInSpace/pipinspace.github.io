@@ -278,8 +278,7 @@ p a {
 /* Blog footer */
 div.blog_footer {
     font-family: 'Moderat Bold', sans-serif;
-    margin-top: -15px;
-    margin-bottom: 25px;
+    margin: -15px 10px 25px 10px;
 }
 
 table,
