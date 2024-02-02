@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm PipInSpace</title>
-    <!--Embed meta data-->
-    <meta content="I'm PipInSpace - PipInSpace" property="og:title" />
-    <meta content="This is the personal homepage of PipInSpace" property="og:description" />
-    <meta content="https://pipinspace.github.io/index.html" property="og:url" />
-    <meta content="#8822ee" data-react-helmet="true" name="theme-color" />
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/webring.css">
-    <link rel="icon" type="image/x-icon" href="img/PixelArtPipTransparent.png">
-</head>
-
-<body>
-    <div class="main_body">
+<div class="main_body">
     <!--Main Body-->
     <div class="title-image">
         <img src="img/TitleBackground.png" class="no-select">
@@ -52,6 +32,7 @@
             </a>
         </div>
     </div>
+
 <h1>About Me</h1>
 <p>
   Hello, I'm PipInSpace! This is my website where I showcase some of my projects and write about things on my <a
@@ -88,27 +69,6 @@
   <a href="https://tudbut.de"><img src="http://tudbut.de:81/webring/logo.png"> &gt</a>
 </div>
 <p><i>feel the 2000s</i> 😎</p>
-<div class="impressum">
-    <div class="impressum_column impressum_left">
-        <span>Navigation</span><br>
-        <a class="a_impressum" href="index.html">Home</a><br>
-        <a class="a_impressum" href="privacy.html">Privacy Notice</a><br>
-        <a class="a_impressum" href="https://pipinspace.github.io">Home again</a><br>
-    </div>
-    <div class="impressum_column impressum_center">
-        <span>Copyright © 2022-2023</span><br>
-        by PipInSpace.<br> All Rights Reserved.<br>
-        <a href="https://pipinspace.github.io"><img class="clickableImg" src="img/PixelArtPipTransparent.png"
-                alt="profile pic" style="border-radius: 400px;">
-        </a><br>
-    </div>
-    <div class="impressum_column impressum_right">
-        <span>Impressum</span><br>
-        Address
-    </div>
-</div>
-</div>
+{{component: impressum}}
 
-</body>
-
-</html>
+</div>

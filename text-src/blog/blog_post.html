@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <!--Embed meta data-->
+    <meta content="Blog - PipInSpace" property="og:title" />
+    <meta content="Post - {{title}}" property="og:description" />
+    <meta content="./" property="og:url" />
+    <meta content="#8822ee" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/PixelArtPipTransparent.png">
+</head>
+
+<body>
+    {{component: link-banner-blog}}
+    <div class="main_body">
+
+        <!--Main Body-->
+        <h1>{{title}}</h1>
+        {{content}}
+
+        <div class="blog_footer">
+            {{date}} <a href="blog.html" style="float: right;">Back to the Blog</a>
+        </div>
+
+        {{component: impressum-blog}}
+
+    </div>
+
+</body>
+
+</html>
