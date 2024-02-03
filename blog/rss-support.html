@@ -2,18 +2,18 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - PipInSpace</title>
-  <!--Embed meta data-->
-  <meta content="Blog - PipInSpace" property="og:title" />
-  <meta content="Hi, this is my blog! Sometimes I post here." property="og:description" />
-  <meta content="./" property="og:url" />
-  <meta content="#8822ee" data-react-helmet="true" name="theme-color" />
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
-  <link rel="icon" type="image/x-icon" href="../img/PixelArtPipTransparent.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS support</title>
+    <!--Embed meta data-->
+    <meta content="Blog - PipInSpace" property="og:title" />
+    <meta content="Post - RSS support" property="og:description" />
+    <meta content="./" property="og:url" />
+    <meta content="#8822ee" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/PixelArtPipTransparent.png">
 </head>
 
 <body>
@@ -40,15 +40,9 @@
 
     <div class="main_body">
 
-        <h1>My Blog</h1>
-        <p>
-            Thank you for finding my Blog! On occasion, I might post something here about my projects, but I am much
-            more
-            active on <a href="https://mastodon.social/@pipinspace">Mastodon</a>. You can follow me there!
-        </p>
-        
-        <h1>Current: <a href="rss-support.html">RSS support</a></h1>
-<p>RSS is now supported in my static site generator! 
+        <!--Main Body-->
+        <h1>RSS support</h1>
+        <p>RSS is now supported in my static site generator! 
 When in &quot;--blog&quot; mode, pagebuild looks for a &quot;rss.cfg&quot; config file in the path/text-src/blog/ folder, and generates a simple RSS feed in the path/blog/ folder if it finds one.
 The config format is simple: Lines begin with a &quot;key: &quot; and contain only one value per line in quotes, all other entries are ignored.
 These are all the valid config options:</p>
@@ -64,17 +58,11 @@ post-link: &quot;https://pipinspace.github.io/blog/&quot;</p>
 You can find my feed <a href="https://pipinspace.github.io/blog/rss">here</a>.<br>
 Thanks for reading! - PipInSpace</p>
 
-<div class="blog_footer">03.02.2024 - 12:36</div>
 
-        <h1>All Posts</h1>
-        <table class="blog_post_list">
-<tr><td><a href="rss-support.html">RSS support</a></td><td> 03.02.2024 - 12:36</td></tr>
-<tr><td><a href="pagebuild-progress.html">Pagebuild progress</a></td><td> 03.02.2024 - 10:58</td></tr>
-<tr><td><a href="hello-world.html">Hello World</a></td><td> 01.02.2024 - 18:43</td></tr>
-<tr><td><a href="nothing.html">Nothing</a></td><td> 01.02.2024 - 18:39</td></tr>
-</table>
+        <div class="blog_footer">
+            03.02.2024 - 12:36 <a href="blog.html" style="float: right;">Back to the Blog</a>
+        </div>
 
-        
         <div class="impressum">
     <div class="impressum_column impressum_left">
         <span>Navigation</span><br>
