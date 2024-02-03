@@ -5,7 +5,7 @@ It generates blog post html files and a blog index from html templates and markd
 is minimal and practically all styling can be done over the template files and CSS. Template files are largely regular
 html, sections to be replaced are marked with {{tags}}. 
 
-The blog_index template supports the tags {{current_post}} (The most recent blog post, formatted with title, content and date)
+The blog_index template supports the tags {{​current_post}} (The most recent blog post, formatted with title, content and date)
 and {{​all_posts}}, a table/list of links to all posts with their creation date. The template blog_post supports the three
 tags {{date}} (The post's creation date), {{title}} (The post's human-readable title, the filename of it's  Markdown file)
 and {{content}}, the post's parsed content.
