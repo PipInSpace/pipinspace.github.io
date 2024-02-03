@@ -9,7 +9,7 @@
         <div class="title-links">
             <a href="index.html">Home</a>
             <a href="blog/blog.html">Blog</a>
-            <a href="rss.xml">RSS</a>
+            <a href="blog/rss.xml">RSS</a>
         </div>
         <div class="social_icons">
             <a href="https://github.com/PipInSpace">
