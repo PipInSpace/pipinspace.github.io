@@ -277,7 +277,7 @@ p a {
 }
 
 /* Blog footer */
-div.blog_footer {
+.blog_footer {
     font-family: 'Moderat Bold', sans-serif;
     margin: -15px 10px 25px 10px;
 }
