@@ -25,12 +25,14 @@
     <div class="main_body">
 
         <!--Main Body-->
-        <h1>{{title}}</h1>
-        {{content}}
+        <article>
+            <h1>{{title}}</h1>
+            {{content}}
 
-        <div class="blog_footer">
-            {{date}} <a href="blog.html" style="float: right;">Back to the Blog</a>
-        </div>
+            <div class="blog_footer">
+                {{date}} <a href="blog.html" style="float: right;">Back to the Blog</a>
+            </div>
+        </article>
 
         {{component: impressum-blog}}
 
