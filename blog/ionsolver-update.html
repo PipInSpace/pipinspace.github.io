@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy</title>
+    <title>IonSolver Update</title>
     <!--Embed meta data-->
-    <meta content="Privacy - PipInSpace" property="og:title" />
-    <meta content="This is the personal homepage of PipInSpace" property="og:description" />
-    <meta content="https://pipinspace.github.io/index.html" property="og:url" />
+    <meta content="Blog - PipInSpace" property="og:title" />
+    <meta content="Post - IonSolver Update" property="og:description" />
+    <meta content="./" property="og:url" />
     <meta content="#8822ee" data-react-helmet="true" name="theme-color" />
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/webring.css">
-    <link rel="icon" type="image/x-icon" href="img/pfp.png">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/pfp.png">
 </head>
 
 <body>
     <div class="link-banner">
     <div class="title-links">
-        <a href="index.html">Home</a>
-        <a href="blog/blog.html">Blog</a>
-        <a href="blog/rss.xml">RSS</a>
+        <a href="../index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="rss.xml">RSS</a>
     </div>
     <div class="social_icons">
         <a href="https://github.com/PipInSpace"><svg viewBox="0 0 496 512">
@@ -38,24 +37,46 @@
         </a>
     </div>
 </div>
-<div class="main_body">
-    <!--Content-->
-    <h1>Privacy Notice</h1>
-    <p>
-        Cookies are evil! (For tracking at least)<br> 
-        I don't use them
-    </p>
-<div class="impressum">
+
+    <div class="main_body">
+
+        <!--Main Body-->
+        <h1>IonSolver Update</h1>
+        <p>I have been working on IonSolver with a friend for a while now and we've made some good progress lately!
+Feature-wise we are getting closer and closer to a fully physically accurate model of plasma in strong magnetic and electric fields while also working on multi-device parallelization.
+Changes include dynamic magnetic and electric fields that are directly computed from the simulated plasma as well as simulated advection of charges in the plasma.
+Both were desperately needed for an accurate model and were challenging to implement but we're getting there.
+Multi-device parallelization allows running the same simulation on many compute devices like GPUs and CPUs in parallel by splitting up the simulation into multiple smaller &quot;domains&quot;.
+These domains are like &quot;mini-simulations&quot; that each run on one compute device and are able to communicate with each other to act as one.
+There is no real limit to the amount of devices used and performance is mostly proportional to the amount of devices used (synchronization between domains introduces a little overhead).
+We are hoping to field-test this soon on multi-GPU hardware.</p>
+<p>In other news, the goal of this project has been a huge success! We started working on IonSolver about a year ago for the German &quot;Jugend Forscht&quot; student science competition.
+The contest has since started and we managed to win 1. place in the regional &amp; state competition!
+We competed in the &quot;Physics&quot; category and are now getting ready for the federal competition against projects from the 15 other states in Germany.</p>
+<div>
+<img src="../img/blog/borat_i_go_to_bundeswettbewerb.png" alt="Borat 'I go to America!' meme with the text 'I go to Bundeswettbewerb (federal competition)!'" style="width: 100%; max-width: 400px; margin: 0 auto; display: block;">
+</div><br>
+<p>Competitions like &quot;Jugend Forscht&quot; are such a great way to get into science and creating things and even to build early connections into academia.
+Through working on this project, we have come into contact with some professionals in the field and received much needed help and support.
+The opportunities this opened up for us and the learning and new experiences have been amazing. Thank you to all who have been a part of this!</p>
+<p>Thank you for reading ❤️</p>
+
+
+        <div class="blog_footer">
+            04.04.2024 - 18:40 <a href="blog.html" style="float: right;">Back to the Blog</a>
+        </div>
+
+        <div class="impressum">
     <div class="impressum_column impressum_left">
         <span>Navigation</span><br>
-        <a class="a_impressum" href="index.html">Home</a><br>
-        <a class="a_impressum" href="privacy.html">Privacy Notice</a><br>
+        <a class="a_impressum" href="../index.html">Home</a><br>
+        <a class="a_impressum" href="../privacy.html">Privacy Notice</a><br>
         <a class="a_impressum" href="https://pipinspace.github.io">Home again</a><br>
     </div>
     <div class="impressum_column impressum_center">
         <span>Copyright © 2022-2023</span><br>
         by PipInSpace.<br> All Rights Reserved.<br>
-        <a href="https://pipinspace.github.io"><img class="clickableImg" src="img/pfp.png"
+        <a href="https://pipinspace.github.io"><img class="clickableImg" src="../img/pfp.png"
                 alt="profile pic" style="border-radius: 400px;">
         </a><br>
     </div>
@@ -64,7 +85,9 @@
         Address
     </div>
 </div>
-</div>
+
+
+    </div>
 
 </body>
 

@@ -13,7 +13,7 @@
   <meta content="#8822ee" data-react-helmet="true" name="theme-color" />
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
-  <link rel="icon" type="image/x-icon" href="../img/PixelArtPipTransparent.png">
+  <link rel="icon" type="image/x-icon" href="../img/pfp.png">
 </head>
 
 <body>
@@ -47,27 +47,31 @@
             active on <a href="https://mastodon.social/@pipinspace">Mastodon</a>. You can follow me there!
         </p>
         
-        <h1>Current: <a href="rss-support.html">RSS support</a></h1>
-<p>RSS is now supported in my static site generator! 
-When in &quot;--blog&quot; mode, pagebuild looks for a &quot;rss.cfg&quot; config file in the path/text-src/blog/ folder, and generates a simple RSS feed in the path/blog/ folder if it finds one.
-The config format is simple: Lines begin with a &quot;key: &quot; and contain only one value per line in quotes, all other entries are ignored.
-These are all the valid config options:</p>
-<p>The feed title:<br>
-title: &quot;PipInSpace's Blog&quot;<br>
-The blog link:<br>
-link: &quot;https://pipinspace.github.io/blog/blog&quot;<br>
-The blog description:<br>
-description: &quot;My Blog. Sometimes I post here.&quot;<br>
-The location of post files:<br>
-post-link: &quot;https://pipinspace.github.io/blog/&quot;</p>
-<p>All other relevant information is extracted from the posts.
-You can find my feed <a href="https://pipinspace.github.io/blog/rss">here</a>.<br>
-Thanks for reading! - PipInSpace</p>
+        <h1>Current: <a href="ionsolver-update.html">IonSolver Update</a></h1>
+<p>I have been working on IonSolver with a friend for a while now and we've made some good progress lately!
+Feature-wise we are getting closer and closer to a fully physically accurate model of plasma in strong magnetic and electric fields while also working on multi-device parallelization.
+Changes include dynamic magnetic and electric fields that are directly computed from the simulated plasma as well as simulated advection of charges in the plasma.
+Both were desperately needed for an accurate model and were challenging to implement but we're getting there.
+Multi-device parallelization allows running the same simulation on many compute devices like GPUs and CPUs in parallel by splitting up the simulation into multiple smaller &quot;domains&quot;.
+These domains are like &quot;mini-simulations&quot; that each run on one compute device and are able to communicate with each other to act as one.
+There is no real limit to the amount of devices used and performance is mostly proportional to the amount of devices used (synchronization between domains introduces a little overhead).
+We are hoping to field-test this soon on multi-GPU hardware.</p>
+<p>In other news, the goal of this project has been a huge success! We started working on IonSolver about a year ago for the German &quot;Jugend Forscht&quot; student science competition.
+The contest has since started and we managed to win 1. place in the regional &amp; state competition!
+We competed in the &quot;Physics&quot; category and are now getting ready for the federal competition against projects from the 15 other states in Germany.</p>
+<div>
+<img src="../img/blog/borat_i_go_to_bundeswettbewerb.png" alt="Borat 'I go to America!' meme with the text 'I go to Bundeswettbewerb (federal competition)!'" style="width: 100%; max-width: 400px; margin: 0 auto; display: block;">
+</div><br>
+<p>Competitions like &quot;Jugend Forscht&quot; are such a great way to get into science and creating things and even to build early connections into academia.
+Through working on this project, we have come into contact with some professionals in the field and received much needed help and support.
+The opportunities this opened up for us and the learning and new experiences have been amazing. Thank you to all who have been a part of this!</p>
+<p>Thank you for reading ❤️</p>
 
-<div class="blog_footer">03.02.2024 - 12:36</div>
+<div class="blog_footer">04.04.2024 - 18:40</div>
 
         <h1>All Posts</h1>
         <table class="blog_post_list">
+<tr><td><a href="ionsolver-update.html">IonSolver Update</a></td><td> 04.04.2024 - 18:40</td></tr>
 <tr><td><a href="rss-support.html">RSS support</a></td><td> 03.02.2024 - 12:36</td></tr>
 <tr><td><a href="pagebuild-progress.html">Pagebuild progress</a></td><td> 03.02.2024 - 10:58</td></tr>
 <tr><td><a href="hello-world.html">Hello World</a></td><td> 01.02.2024 - 18:43</td></tr>
@@ -85,7 +89,7 @@ Thanks for reading! - PipInSpace</p>
     <div class="impressum_column impressum_center">
         <span>Copyright © 2022-2023</span><br>
         by PipInSpace.<br> All Rights Reserved.<br>
-        <a href="https://pipinspace.github.io"><img class="clickableImg" src="../img/PixelArtPipTransparent.png"
+        <a href="https://pipinspace.github.io"><img class="clickableImg" src="../img/pfp.png"
                 alt="profile pic" style="border-radius: 400px;">
         </a><br>
     </div>

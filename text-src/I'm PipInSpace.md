@@ -36,7 +36,7 @@
 <h1>About Me</h1>
 <p>
   Hello, I'm PipInSpace! This is my website where I showcase some of my projects and write about things on my <a
-    href="blog.html">Blog</a> (whoo I posted something!). I am currently working on my main project <a
+    href="blog/blog.html">Blog</a>. I am currently working on my main project <a
     href="https://github.com/PipInSpace/IonSolver">IonSolver</a>, a magnetohydrodynamic physics simulation
   (Primarily for a student competition). I have some side projects, like my
   <a href="https://github.com/PipInSpace/reminder"> reminder software</a>, a

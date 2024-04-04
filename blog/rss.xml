@@ -32,5 +32,12 @@
       <guid>https://pipinspace.github.io/blog/rss-support.html</guid>
       <description>RSS is now supported in my static site generator!  When in "--blog" mode, pagebuild looks for a "...</description>
     </item>
+    <item>
+      <title>IonSolver Update</title>
+      <pubDate>Thu, 04 Apr 2024 16:40:03 UTC</pubDate>
+      <link>https://pipinspace.github.io/blog/ionsolver-update.html</link>
+      <guid>https://pipinspace.github.io/blog/ionsolver-update.html</guid>
+      <description>I have been working on IonSolver with a friend for a while now and we've made some good progress ...</description>
+    </item>
   </channel>
 </rss>
