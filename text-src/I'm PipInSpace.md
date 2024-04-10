@@ -62,13 +62,6 @@
 <div style="display: none;"><!--Mastodon Verification-->
   <a rel="me" href="https://mastodon.social/@pipinspace">Mastodon</a>
 </div>
-<h2>webring</h2>
-<div class="webring">
-  <a href="">&lt <img src=""></a>
-  <a href=""><img src="webring/logo.png"></a>
-  <a href="https://tudbut.de"><img src="https://tudbut.de:881/webring/logo.png"> &gt</a>
-</div>
-<p><i>feel the 2000s</i> 😎</p>
 {{component: impressum}}
 
 </div>
