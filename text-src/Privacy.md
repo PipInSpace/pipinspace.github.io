@@ -3,8 +3,7 @@
     <!--Content-->
     <h1>Privacy Notice</h1>
     <p>
-        Cookies are evil! (For tracking at least)<br> 
-        I don't use them
+        This website uses or saves none of your data.
     </p>
 
 {{component: impressum}}
