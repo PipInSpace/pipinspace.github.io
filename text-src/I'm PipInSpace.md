@@ -55,6 +55,8 @@
   by Dr. Moritz Lehmann. We started working on IonSolver for the student competition "Jugend Forscht" and it's going <a href="blog/ionsolver-update">quite well</a> 😊.
   You can find more info about the project on the <a href="https://github.com/PipInSpace/IonSolver">GitHub</a>.
 </p>
+<h2>Buttons 💜</h2>
+{{component: buttons}}
 <div style="display: none;"><!--Mastodon Verification-->
   <a rel="me" href="https://mastodon.social/@pipinspace">Mastodon</a>
 </div>
