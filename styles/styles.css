@@ -224,6 +224,10 @@ div.buttons_container {
     gap: 10px;
 }
 
+div.buttons_container img {
+  image-rendering: pixelated;
+}
+
 /* Impressum/Footer */
 .impressum {
     padding-top: 40px;
