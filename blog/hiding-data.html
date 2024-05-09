@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - PipInSpace</title>
+    <title>Hiding Data</title>
     <!--Embed meta data-->
     <meta content="Blog - PipInSpace" property="og:title" />
-    <meta content="Hi, this is my blog! Sometimes I post here." property="og:description" />
+    <meta content="Post - Hiding Data" property="og:description" />
     <meta content="./" property="og:url" />
     <meta content="https://pipinspace.github.io/img/CardBlog.jpg" property="og:image" />
     <meta content="#8822ee" data-react-helmet="true" name="theme-color" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog - PipInSpace">
+    <meta name="twitter:title" content="Post - Hiding Data">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://pipinspace.github.io/img/CardBlog.jpg">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
@@ -52,15 +52,10 @@
 
     <div class="main_body">
 
-        <h1>My Blog</h1>
-        <p>
-            Thank you for finding my Blog! On occasion, I might post something here about my projects, but I am much
-            more
-            active on <a href="https://mastodon.social/@pipinspace">Mastodon</a>. You can follow me there!
-        </p>
-        
-        <h1>Current: <a href="hiding-data.html">Hiding Data</a></h1>
-<p>A while back I began experimenting with hiding data in unsuspecting images or text, also known as stenography. The idea is that messages or files are not encrypted but instead hidden in a way that makes detection difficult. When communicating in a public network, users sharing large amounts of encrypted files may arouse suspicion but &quot;sharing a few memes&quot; with your friends looks far less interesting. I've looked into two stenography methods in particular: subtle pixel manipulation in images (image-code) and the generation of nonsense texts with a reversible algorithm (Scipher). Both are implemented in public repositories on my <a href="https://github.com/PipInSpace">GitHub profile</a>.</p>
+        <!--Main Body-->
+        <article>
+            <h1>Hiding Data</h1>
+            <p>A while back I began experimenting with hiding data in unsuspecting images or text, also known as stenography. The idea is that messages or files are not encrypted but instead hidden in a way that makes detection difficult. When communicating in a public network, users sharing large amounts of encrypted files may arouse suspicion but &quot;sharing a few memes&quot; with your friends looks far less interesting. I've looked into two stenography methods in particular: subtle pixel manipulation in images (image-code) and the generation of nonsense texts with a reversible algorithm (Scipher). Both are implemented in public repositories on my <a href="https://github.com/PipInSpace">GitHub profile</a>.</p>
 <h2>Image-Code</h2>
 <p>My goal with <a href="https://github.com/PipInSpace/image-code">image-code</a> was to write a programm that is able to include any data (not just other images) within a PNG image without disrupting it too much. The program takes in an image (most file formats are supported) and a file to be encoded (a simple message may be saved as a .txt file). The program outputs a new PNG image that can be decoded by a similarly configured program to return the initial file content.<br>
 The output image stores endoded data in a linked sequence of pixels. A pixel's R-channel pixels contains encoded data, the G- and B-channels point to the next pixel in the data sequence. image-code encodes these values as a difference from the average of the 4 surrounding pixels, so pixels usually remain close to their original colour in photos (but disturbance may be visible in very flat or artificial images).</p>
@@ -132,20 +127,14 @@ This symposium welcomes revisions on any subject related to the motifs and the t
 </div>
 <p>Thanks for reading 💜!</p>
 
-<div class="blog_footer">09.05.2024 - 13:32</div>
 
-        <h1>All Posts</h1>
-        <table class="blog_post_list">
-<tr><td><a href="hiding-data.html">Hiding Data</a></td><td> 09.05.2024 - 13:32</td></tr>
-<tr><td><a href="ionsolver-update.html">IonSolver Update</a></td><td> 04.04.2024 - 18:40</td></tr>
-<tr><td><a href="rss-support.html">RSS support</a></td><td> 03.02.2024 - 12:36</td></tr>
-<tr><td><a href="pagebuild-progress.html">Pagebuild progress</a></td><td> 03.02.2024 - 10:58</td></tr>
-<tr><td><a href="hello-world.html">Hello World</a></td><td> 01.02.2024 - 18:43</td></tr>
-<tr><td><a href="nothing.html">Nothing</a></td><td> 01.02.2024 - 18:39</td></tr>
-</table>
+            <footer class="blog_footer">
+                09.05.2024 - 13:32 <a href="blog.html" style="float: right;">Back to the Blog</a>
+            </footer>
+        </article>
 
-        
-        <div class="impressum">
+        <footer>
+            <div class="impressum">
     <div class="impressum_column impressum_left">
         <span>Navigation</span><br>
         <a class="a_impressum" href="../index.html">Home</a><br>
@@ -164,6 +153,7 @@ This symposium welcomes revisions on any subject related to the motifs and the t
     </div>
 </div>
 
+        </footer>
 
     </div>
 

@@ -39,5 +39,12 @@
       <guid>https://pipinspace.github.io/blog/ionsolver-update.html</guid>
       <description>I have been working on IonSolver with a friend for a while now and we've made some good progress ...</description>
     </item>
+    <item>
+      <title>Hiding Data</title>
+      <pubDate>Thu, 09 May 2024 11:32:04 UTC</pubDate>
+      <link>https://pipinspace.github.io/blog/hiding-data.html</link>
+      <guid>https://pipinspace.github.io/blog/hiding-data.html</guid>
+      <description>A while back I began experimenting with hiding data in unsuspecting images or text, also known as...</description>
+    </item>
   </channel>
 </rss>
