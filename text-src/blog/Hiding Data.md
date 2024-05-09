@@ -1,4 +1,4 @@
-A while back I began experimenting with hiding data in unsuspecting images or text, also known as stenography. The idea is that messages or files are not encrypted but instead hidden in a way that makes detection difficult. When communicating in a public network, users sharing large amounts of encrypted files may arouse suspicion but "sharing a few memes" with your friends looks far less interesting. I've looked into two stenography methods in particular: subtle pixel manipulation in images (image-code) and the generation of nonsense texts with a reversible algorithm (Scipher). Both are implemented in public repositories on my [GitHub profile](https://github.com/PipInSpace).
+A while back I began experimenting with hiding data in innocuous images or text, also known as stenography. The idea is that messages or files are not encrypted but instead hidden in a way that makes detection difficult. When communicating in a public network, users sharing large amounts of encrypted files may arouse suspicion but "sharing a few memes" with your friends looks far less interesting. I've looked into two stenography methods in particular: subtle pixel manipulation in images (image-code) and the generation of nonsense texts with a reversible algorithm (Scipher). Both are implemented in public repositories on my [GitHub profile](https://github.com/PipInSpace).
 
 ## Image-Code
 My goal with [image-code](https://github.com/PipInSpace/image-code) was to write a programm that is able to include any data (not just other images) within a PNG image without disrupting it too much. The program takes in an image (most file formats are supported) and a file to be encoded (a simple message may be saved as a .txt file). The program outputs a new PNG image that can be decoded by a similarly configured program to return the initial file content.<br>
@@ -63,17 +63,17 @@ This is a sample output text from scipher that can be decoded using the default 
     Assistant Professor Leonie Key, Medical College of Wisconsin
     Francesco Newman, Shaanxi Normal University
     Feng Coleman, University of Alcala
-    
+
     General Co-Chairs:
     Vaughn Shao (Hunan University)
     Earl Rasmussen (University of Aberdeen)
-    
+
     Important dates:
     - manuscripts due: June 17, 2024
     - notification of acceptance: July 5, 2024
     - final manuscripts due: August 29, 2024
     - special session date: October 16, 2024
-    
+
     This symposium welcomes revisions on any subject related to the motifs and the topics discussed above. Submitted abstracts should not be longer than 25 pages, including footnotes. Please look at the terms and conditions and other minutiae on the symposium website.
 </div>
 
