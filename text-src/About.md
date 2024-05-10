@@ -1,10 +1,16 @@
 {{component: link-banner}}
 <style>
 pre {
-    font-size: 0.7rem;
-    background-color: color-mix(in srgb, var(--text_colour) 10%, transparent);
+    font-size: 0.8rem;
+    background-color: #222;
+    color: #f1f1f1;
     padding: 10px;
     margin: 0;
+    margin-top: 5px;
+    max-height: 300px;
+    overflow: auto;
+    border: 3px solid #222;
+    scrollbar-width: thin;
 }
 </style>
 
@@ -48,9 +54,9 @@ You can find me on the following channels:
 - <span class="span-highlight">Signal:</span> ask me
 - <span class="span-highlight">Keys:</span> for confidential messages or checking signatures
 
-<details class="text-padding" style="margin-left: 35px; margin-top: -20px;">
+<details class="text-padding" style="margin-left: 35px; margin-top: -25px;">
 <summary>
-<span class="span-highlight">PGP</span> <span style="text-decoration: underline; cursor: pointer;">view</span> 
+<span class="span-highlight">PGP</span> <span style="text-decoration: underline; cursor: pointer;">view</span> -- <a href="files/pgp.pub" style="text-decoration: underline; color: var(--text_colour)" download>file</a>
 </summary>
 
     -----BEGIN PGP PUBLIC KEY BLOCK-----
