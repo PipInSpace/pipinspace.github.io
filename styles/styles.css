@@ -181,6 +181,7 @@ p a {
     transition: opacity 0.3s;
     position: absolute;
     left: 0;
+    top: -0.65rem;
     z-index: 0;
     width: 300%;
 }
