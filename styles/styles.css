@@ -21,19 +21,33 @@
 
 :root {
     font-size: 20px;
+    scrollbar-width: thin;
     --background_colour: #000;
     --text_colour: #f1f1f1;
     --accent_colour: #28E;
     --accent_colour_light: #68E;
-    --accent_colour_secondary: #82E;
-    --accent_colour_secondary_light: #86E;
+    --accent_colour_secondary: #94F;
+    --accent_colour_secondary_light: #97F;
     --titlesize: 1.6rem;
+}
+
+.span-highlight {
+    background-color: color-mix(in srgb, var(--accent_colour_secondary) 35%, transparent);
+    color: var(--accent_colour_secondary);
+    padding: 0.07rem 0.3rem;
+    margin-top: 2px;
+    font-family: 'Moderat Bold', sans-serif;
+    display: inline-block;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         --background_colour: #f1f1f1;
         --text_colour: #000;
+    }
+
+    .span-highlight {
+        background-color: color-mix(in srgb, var(--accent_colour_secondary) 20%, transparent);
     }
 
     .title-image p {
@@ -77,7 +91,7 @@ a:visited:hover {
 }
 
 h1 {
-    font-family: 'Moderat Bold', serif;
+    font-family: 'Moderat Bold', sans-serif;
     font-size: var(--titlesize);
     font-weight: 400;
     margin: auto;
@@ -85,7 +99,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Moderat Bold', serif;
+    font-family: 'Moderat Bold', sans-serif;
     font-size: calc(var(--titlesize) - 0.2rem);
     font-weight: 400;
     margin: auto;
@@ -93,14 +107,15 @@ h2 {
 }
 
 p {
-    margin: 0 10px 25px 10px;
+    margin: 0 10px 15px 10px;
     box-sizing: border-box;
     text-align: justify;
 }
 
 ul {
-    margin: 0 10px 25px 10px;
+    margin: 0 10px 25px 25px;
     padding-left: 20px;
+    list-style-type: square;
 }
 
 p a {
@@ -133,10 +148,51 @@ p a {
     width: 100%;
 }
 
-.title-image h1 {
+.title-name-container {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.name-text  {
+    display: inline;
+    color: var(--accent_colour_secondary);
+}
+
+.name-text-overlap {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}
+
+#name {
+    opacity: 1;
+    transition: opacity 0.6s;
+    position: relative;
+    z-index: 1;
+}
+
+#name:hover {
+    opacity: 0;
+}
+
+#alias {
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    width: 300%;
+}
+
+#name:hover+#alias {
+    opacity: 1;
+}
+
+.pronouns {
+    color: var(--text_colour);
+    font-size: 1rem;
+    font-style: italic;
 }
 
 .title-image p {
