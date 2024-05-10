@@ -255,6 +255,7 @@ p a {
     background-color: var(--background_colour);
     position: sticky;
     top: 0;
+    box-shadow: 0 6px 5px -5px color-mix(in srgb, var(--text_colour) 30%, transparent);
 }
 
 .quote {
