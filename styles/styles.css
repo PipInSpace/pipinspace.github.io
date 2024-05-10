@@ -58,7 +58,13 @@
 
 @media (max-width: 450px) {
     :root {
-        font-size: 17px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 300px) {
+    :root {
+        font-size: 13px;
     }
 }
 
@@ -200,7 +206,7 @@ p a {
     position: absolute;
     top: 2.3rem;
     left: 0;
-    width: 50%;
+    width: 400px;
     padding: 10px;
     margin-left: 0;
     margin-right: 0;
@@ -240,11 +246,28 @@ p a {
 
 @media (max-width: 800px) {
     .title-image p {
-        width: calc(100%);
         background-color: color-mix(in srgb, var(--background_colour) 30%, transparent);
         backdrop-filter: blur(5px);
-        
-        
+    }
+}
+
+@media (max-width: 400px) {
+    .title-image p {
+        width: calc(100%);
+    }
+
+    .title-links {
+        width: 150px;
+    }
+
+    .title-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 300px) {
+    .title-image {
+        height: 200px;
     }
 }
 
