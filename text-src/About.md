@@ -37,7 +37,7 @@ me in bullet points:
 💜 i have a 88x31 button:
 <div style="width: 100%; margin-top: -10px; margin-bottom: 5px;"><a href="img/buttons/pipinspace.png"><img alt="my 81x33 button" src="img/buttons/pipinspace.png" style="display: block; margin: auto"></a></div>
 
-feel free to use it on you website if you want (i would love to hear from you)
+feel free to use it on your website if you want (i would love to hear from you)
 
 check out my [projects](projects.html) or my [blog](blog/blog.html)
 
