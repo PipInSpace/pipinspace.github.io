@@ -24,12 +24,12 @@ me in bullet points:
 
 - space is cool
 - physics are awesome
-- queer
-- age < 20
-- pronouns she/her
 - doing high performance computing
 - software "engineer"
 - love learning
+- age < 20
+- queer
+- pronouns she/her
 - left-leaning
 - live in europe
 - trains and bikes over cars
@@ -37,7 +37,7 @@ me in bullet points:
 💜 i have a 88x31 button:
 <div style="width: 100%; margin-top: -10px; margin-bottom: 5px;"><a href="img/buttons/pipinspace.png"><img alt="my 81x33 button" src="img/buttons/pipinspace.png" style="display: block; margin: auto"></a></div>
 
-feel free to use it on your website if you want (i would love to hear from you)
+feel free to use it on your website if you want (i would love to hear from you if you do!)
 
 check out my [projects](projects.html) or my [blog](blog/blog.html)
 
@@ -110,7 +110,7 @@ I program in my free time. I'm self-taught and have always enjoyed "teaching" co
 
 Combining science and computers, Me and a friend currently work on my main project [IonSolver](https://github.com/PipInSpace/IonSolver), a magnetohydrodynamic simulation software. Working with complex physics and highly efficient parallel computing has been a new and very fun challenge.
 
-I like solving problems and working on my own solutions. I often create custom tools like my static site generator [pagebuild](https://github.com/PipInSpace/pagebuild) or an easily configurable [reminder](https://github.com/PipInSpace/pagebuild) program.
+I like solving problems and working on my own solutions. I often create custom tools like my static site generator [pagebuild](https://github.com/PipInSpace/pagebuild) or my easily configurable [reminder](https://github.com/PipInSpace/pagebuild) app.
 
 Sometimes I tinker with hardware, but I usually stay on the software side. Learning new skills like GPU programming or basic webdev is always fun.
 
