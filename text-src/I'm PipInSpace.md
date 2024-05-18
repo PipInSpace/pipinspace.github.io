@@ -37,7 +37,7 @@ I am currently working on my main project <a href="https://github.com/PipInSpace
 
 If you want to work/collab with me, check out my <a href="about.html">about</a> page for contact info and my skills/interests.
 
-soon on my own vps! testing webhook...
+soon on my own vps!
 
 ## Buttons 💜
 {{component: buttons}}
