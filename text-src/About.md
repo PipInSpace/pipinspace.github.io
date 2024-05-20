@@ -31,7 +31,7 @@ me in bullet points:
 - queer
 - pronouns she/her
 - left-leaning
-- live in europe
+- live in germany
 - trains and bikes over cars
 
 💜 i have a 88x31 button:

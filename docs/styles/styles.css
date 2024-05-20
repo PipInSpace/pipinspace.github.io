@@ -116,6 +116,7 @@ p {
     margin: 0 10px 15px 10px;
     box-sizing: border-box;
     text-align: justify;
+    hyphens: auto;
 }
 
 ul {
@@ -125,6 +126,11 @@ ul {
 }
 
 p a {
+    /* Bold links in text */
+    font-weight: 700;
+}
+
+li a {
     /* Bold links in text */
     font-weight: 700;
 }
@@ -279,7 +285,7 @@ p a {
     background-color: var(--background_colour);
     position: sticky;
     top: 0;
-    box-shadow: 0 6px 5px -5px color-mix(in srgb, var(--text_colour) 30%, transparent);
+    box-shadow: 0 7px 5px -7px color-mix(in srgb, var(--text_colour) 30%, transparent);
 }
 
 .quote {
