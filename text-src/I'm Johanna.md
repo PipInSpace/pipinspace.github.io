@@ -1,7 +1,7 @@
 <div class="main_body">
     <!--Main Body-->
     <div class="title-image">
-        <img alt="Electric field lines of two point charges next to each other" src="img/TitleBackground.png" class="no-select">
+        <img alt="Electric field lines of two point charges next to each other" src="img/TitleBackground.png" class="no-select" draggable="false">
         <div class="title-name-container">
           <h1 style="display: inline;">Hi, I'm </h1>
           <div class="name-text-overlap">
