@@ -97,7 +97,7 @@ I mainly work on high performance computing next to some smaller sideprojects li
 Language-wise I focus on Rust and OpenCL C for GPU-accelerated programming, but I have worked with many languages. I am learning Java on the side and have used C# for some game development experiments.
 
 <p style="text-align: left;">
-<span class="span-highlight">Rust</span> <span class="span-highlight">Java</span> <span class="span-highlight">C</span> <span class="span-highlight">OpenCL C</span> <span class="span-highlight">C#</span> <span class="span-highlight">Python</span> <span class="span-highlight">HTML/CSS</span> <span class="span-highlight">Javascript</span> <span class="span-highlight">Bash</span> <span class="span-highlight">LaTeX</span></p>
+<span class="span-highlight">Rust</span> <span class="span-highlight">C</span> <span class="span-highlight">OpenCL C</span> <span class="span-highlight">Java</span> <span class="span-highlight">C#</span> <span class="span-highlight">Python</span> <span class="span-highlight">HTML/CSS</span> <span class="span-highlight">Javascript</span> <span class="span-highlight">Bash</span> <span class="span-highlight">LaTeX</span></p>
 
 {{component: impressum}}
 </div>
