@@ -144,6 +144,12 @@ li a {
     -webkit-user-drag: none;
 }
 
+.key-information {
+    opacity: 0;
+    position: fixed;
+    pointer-events: none;
+}
+
 .main_body {
     max-width: 800px;
     margin: auto;

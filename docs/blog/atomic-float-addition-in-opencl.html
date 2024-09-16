@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - PipInSpace</title>
+    <title>Atomic Float Addition in OpenCL</title>
     <!--Embed meta data-->
-    <meta content="Blog - PipInSpace" property="og:title" />
-    <meta content="Hi, this is my blog! Sometimes I post here." property="og:description" />
+    <meta content="Post - Atomic Float Addition in OpenCL" property="og:title" />
+    <meta content="Blog - PipInSpace" property="og:description" />
     <meta content="./" property="og:url" />
     <meta content="https://pipinspace.github.io/img/CardBlog.jpg" property="og:image" />
     <meta content="#8822ee" data-react-helmet="true" name="theme-color" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog - PipInSpace">
+    <meta name="twitter:title" content="Post - Atomic Float Addition in OpenCL">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://pipinspace.github.io/img/CardBlog.jpg">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
@@ -63,16 +63,9 @@
 
     <div class="main_body">
 
-        <h1>My Blog</h1>
-        <p>
-            Thank you for finding my Blog! On occasion, I might post something here about my projects, but I am much
-            more
-            active on <a href="https://mastodon.social/@pipinspace">Mastodon</a>. You can follow me there!
-        </p>
-        
-        <h1>Current: <a href="atomic-float-addition-in-opencl.html">Atomic Float Addition in OpenCL</a></h1>
-        <details style="margin-bottom: 20px;">
-            <summary class="text-padding" style="cursor: pointer;">Click to view</summary>
+        <!--Main Body-->
+        <article>
+            <h1>Atomic Float Addition in OpenCL</h1>
             <p>The following code snippet is a cross-platform implementation of atomic float addition in OpenCL.
 The implementation uses hardware-supported functions whereever possible and implements a fallback algorithm that is faster than most commonly used approaches.
 I am sharing it here for other developers to use as a single function to handle atomic addition on all platforms uniformly.</p>
@@ -86,22 +79,14 @@ If no compatible implementation is detected, the function expands into a functio
 I hope this code saves some headaches when working with atomic float addition! If you have any improvements for or thoughts on the code above feel free to reach out to me, preferably over the <a href="https://mastodon.social/@pipinspace">Fediverse</a>. I want to thank <a href="https://github.com/ProjectPhysX">ProjectPhysX</a> for compiling the implementations and especially for providing the PTX assembly for NVidia GPUs!</p>
 <p><a id="1b" href="#1t">[1]</a>: Yes, really! Many implementations loose an immense amount of speed when conflicts between threads occur. One of the more common implementations uses only one <code>atomic_cmpxchg()</code> call in a while loop that checks for successful addition. This can quickly lead to race conditions where threads have to &quot;retry&quot; the addition every time another thread writes a new value to memory in between, possibly for hundreds of times. This completely degrades performance and in my tests is about 8000 times slower than the  fallback algorithm in the snippet above.</p>
 
-<div class="blog_footer">16.09.2024 - 19:42</div>
-        </details>
 
-        <h1>All Posts</h1>
-        <table class="blog_post_list">
-<tr><td><a href="atomic-float-addition-in-opencl.html">Atomic Float Addition in OpenCL</a></td><td> 16.09.2024 - 19:42</td></tr>
-<tr><td><a href="hiding-data.html">Hiding Data</a></td><td> 09.05.2024 - 13:32</td></tr>
-<tr><td><a href="ionsolver-update.html">IonSolver Update</a></td><td> 04.04.2024 - 18:40</td></tr>
-<tr><td><a href="rss-support.html">RSS support</a></td><td> 03.02.2024 - 12:36</td></tr>
-<tr><td><a href="pagebuild-progress.html">Pagebuild progress</a></td><td> 03.02.2024 - 10:58</td></tr>
-<tr><td><a href="hello-world.html">Hello World</a></td><td> 01.02.2024 - 18:43</td></tr>
-<tr><td><a href="nothing.html">Nothing</a></td><td> 01.02.2024 - 18:39</td></tr>
-</table>
+            <footer class="blog_footer">
+                16.09.2024 - 19:42 <a href="blog.html" style="float: right;">Back to the Blog</a>
+            </footer>
+        </article>
 
-        
-        <div class="impressum">
+        <footer>
+            <div class="impressum">
     <div class="impressum_column impressum_left">
         <span>Navigation</span><br>
         <a class="a_impressum" href="../index.html">Home</a><br>
@@ -120,6 +105,7 @@ I hope this code saves some headaches when working with atomic float addition! I
     </div>
 </div>
 
+        </footer>
 
     </div>
 

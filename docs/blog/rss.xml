@@ -46,5 +46,12 @@
       <guid>https://pipinspace.github.io/blog/hiding-data.html</guid>
       <description>A while back I began experimenting with hiding data in innocuous images or text, also known as st...</description>
     </item>
+    <item>
+      <title>Atomic Float Addition in OpenCL</title>
+      <pubDate>Mon, 16 Sep 2024 17:42:55 UTC</pubDate>
+      <link>https://pipinspace.github.io/blog/atomic-float-addition-in-opencl.html</link>
+      <guid>https://pipinspace.github.io/blog/atomic-float-addition-in-opencl.html</guid>
+      <description>The following code snippet is a cross-platform implementation of atomic float addition in OpenCL....</description>
+    </item>
   </channel>
 </rss>
