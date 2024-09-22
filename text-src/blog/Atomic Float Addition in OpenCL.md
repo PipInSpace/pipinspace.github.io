@@ -8,7 +8,7 @@ I am sharing it here for other developers to use as a single function to handle 
 	#if defined(cl_nv_pragma_unroll) // use hardware-supported atomic addition on Nvidia GPUs with inline PTX assembly
 		float ret; asm volatile("atom.global.add.f32 %0,[%1],%2;":"=f"(ret):"l"(addr),"f"(val):"memory");
 	#elif defined(__opencl_c_ext_fp32_global_atomic_add) // use hardware-supported atomic addition on some Intel GPUs
-		atomic_fetch_add((volatile global atomic_float*)addr, val);
+		atomic_fetch_add_explicit((volatile global atomic_float*)addr, val, memory_order_relaxed);
 	#elif __has_builtin(__builtin_amdgcn_global_atomic_fadd_f32) // use hardware-supported atomic addition on some AMD GPUs
 		__builtin_amdgcn_global_atomic_fadd_f32(addr, val);
 	#else // fallback emulation: https://forums.developer.nvidia.com/t/atomicadd-float-float-atomicmul-float-float/14639/5
