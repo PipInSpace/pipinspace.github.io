@@ -424,3 +424,35 @@ table.blog_post_list * tr td {
 table.blog_post_list * tr:nth-child(1) td {
     border-top: 1px solid var(--text_colour);
 }
+
+/* Prism code highlighting */
+.code-toolbar {
+    position: relative;
+}
+
+div.code-toolbar .toolbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+div.code-toolbar:hover .toolbar {
+    opacity: 1;
+}
+
+.code-toolbar .toolbar .toolbar-item {
+    display: block;
+    float: right;
+    background-color: color-mix(in srgb, var(--accent_colour_secondary) 20%, transparent);
+}
+
+.code-toolbar .toolbar .toolbar-item button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Moderat Bold';
+    font-size: 0.8em;
+    cursor: pointer;
+    color: var(--accent_colour_secondary);
+}
