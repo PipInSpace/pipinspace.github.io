@@ -102,7 +102,7 @@ I mainly work on high performance computing next to some smaller sideprojects li
 <p style="text-align: left;">
 <span class="span-highlight">High Performance Computing</span> <span class="span-highlight">Concurrent Programming</span> <span class="span-highlight">GPU Acceleration</span> <span class="span-highlight">Physics Simulations</span> <span class="span-highlight">Graphics Programming</span> <span class="span-highlight">Embedded systems</span> <span class="span-highlight">Game Development</span> </p>
 
-Language-wise I focus on Rust and OpenCL C for GPU-accelerated programming, but I have worked with many languages. I am learning Java on the side and have used C# for some game development experiments.
+Language-wise I focus on Rust and OpenCL C for GPU-accelerated programming, but I have worked with many languages. I am learning [APL](https://en.wikipedia.org/wiki/APL_(programming_language)) on the side and have used HTML/CSS/JS for some web development experiments.
 
 <p style="text-align: left;">
 <span class="span-highlight">Rust</span> <span class="span-highlight">C</span> <span class="span-highlight">OpenCL C</span> <span class="span-highlight">APL</span> <span class="span-highlight">Java</span> <span class="span-highlight">Python</span> <span class="span-highlight">HTML/CSS</span> <span class="span-highlight">Javascript</span> <span class="span-highlight">Bash</span> <span class="span-highlight">LaTeX</span></p>
