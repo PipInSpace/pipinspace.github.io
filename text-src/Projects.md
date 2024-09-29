@@ -19,7 +19,7 @@ Here you can find a list of my favourite projects:
   </picture>
 </p>
 
-[IonSolver](https://github.com/PipInSpace/IonSolver) is a magnetohydrodynamic Lattice-Boltzmann simulation software. In English, this means that IonSolver can simulate how charged fluids like plasma interact with themselves and with outside magnetic and electric fields. IonSolver is currently my main project and I work on it with a friend. We started developing it to study ion thrusters without actually having to build and test them, but have since focused more on getting the physics of the software as accurate as possible. This project combines two of my biggest interests, physics and high performance computing with concurrent programming. IonSolver is open-source and available on GitHub.
+[IonSolver](https://github.com/PipInSpace/IonSolver) is a magnetohydrodynamic Lattice-Boltzmann simulation software. In English, this means that IonSolver can simulate how charged fluids like plasma interact with themselves and with outside magnetic and electric fields. IonSolver is currently my main project: I started developing it to study ion thrusters without actually having to build and test them, but have since focused more on getting the physics of the software as accurate as possible. This project combines two of my biggest interests, physics and high performance computing with concurrent programming. IonSolver is open-source and available on GitHub.
 <br> <span class="span-highlight">GitHub repository</span> -- [github.com/PipInSpace/IonSolver](https://github.com/PipInSpace/IonSolver)
 <br> <span class="span-highlight">YouTube playlist</span> -- [youtube.com/playlist?list=PLKV8...](https://youtube.com/playlist?list=PLKV8dpY2AdM_QT6Yrf0DTfBjzDtKi5w70)
 

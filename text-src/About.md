@@ -89,7 +89,7 @@ I love science, especially physics! Learning about how the world works in detail
 
 I program in my free time. I'm self-taught and have always enjoyed "teaching" computers new skills. You can check out some of my projects [here](projects.html).
 
-Combining science and computers, Me and a friend currently work on my main project [IonSolver](https://github.com/PipInSpace/IonSolver), a magnetohydrodynamic simulation software. Working with complex physics and highly efficient parallel computing has been a new and very fun challenge.
+Combining science and computers, I currently work on my main project [IonSolver](https://github.com/PipInSpace/IonSolver), a magnetohydrodynamic simulation software. Working with complex physics and highly efficient parallel computing has been a new and very fun challenge.
 
 I like solving problems and working on my own solutions. I often create custom tools like my static site generator [pagebuild](https://github.com/PipInSpace/pagebuild) or my easily configurable [reminder](https://github.com/PipInSpace/pagebuild) app.
 
@@ -105,7 +105,7 @@ I mainly work on high performance computing next to some smaller sideprojects li
 Language-wise I focus on Rust and OpenCL C for GPU-accelerated programming, but I have worked with many languages. I am learning Java on the side and have used C# for some game development experiments.
 
 <p style="text-align: left;">
-<span class="span-highlight">Rust</span> <span class="span-highlight">C</span> <span class="span-highlight">OpenCL C</span> <span class="span-highlight">Java</span> <span class="span-highlight">C#</span> <span class="span-highlight">Python</span> <span class="span-highlight">HTML/CSS</span> <span class="span-highlight">Javascript</span> <span class="span-highlight">Bash</span> <span class="span-highlight">LaTeX</span></p>
+<span class="span-highlight">Rust</span> <span class="span-highlight">C</span> <span class="span-highlight">OpenCL C</span> <span class="span-highlight">APL</span> <span class="span-highlight">Java</span> <span class="span-highlight">Python</span> <span class="span-highlight">HTML/CSS</span> <span class="span-highlight">Javascript</span> <span class="span-highlight">Bash</span> <span class="span-highlight">LaTeX</span></p>
 
 {{component: impressum}}
 </div>
