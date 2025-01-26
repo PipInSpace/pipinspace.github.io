@@ -43,7 +43,7 @@ me in bullet points:
 - trains and bikes over cars
 
 💜 i have a 88x31 button:
-<div style="width: 100%; margin-top: -10px; margin-bottom: 5px;"><a href="img/buttons/pipinspace.png"><img alt="my 81x33 button" src="img/buttons/pipinspace.png" style="display: block; margin: auto; image-rendering: pixelated;"></a></div>
+<div style="width: 100%; margin-top: -10px; margin-bottom: 5px;"><a href="img/buttons/violetspace.png"><img alt="my 81x33 button" src="img/buttons/violetspace.png" style="display: block; margin: auto; image-rendering: pixelated;"></a></div>
 
 feel free to use it on your website if you want (i would love to hear from you if you do!)
 
