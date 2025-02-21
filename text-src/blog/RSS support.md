@@ -4,14 +4,14 @@ The config format is simple: Lines begin with a "key: " and contain only one val
 These are all the valid config options:
 
 The feed title:<br>
-title: "PipInSpace's Blog"<br>
+title: "VioletSpace's Blog"<br>
 The blog link:<br>
-link: "https://pipinspace.github.io/blog/blog"<br>
+link: "https://violetspace.github.io/blog/blog"<br>
 The blog description:<br>
 description: "My Blog. Sometimes I post here."<br>
 The location of post files:<br>
-post-link: "https://pipinspace.github.io/blog/"
+post-link: "https://violetspace.github.io/blog/"
 
 All other relevant information is extracted from the posts.
-You can find my feed [here](https://pipinspace.github.io/blog/rss).<br>
-Thanks for reading! - PipInSpace
+You can find my feed [here](https://violetspace.github.io/blog/rss).<br>
+Thanks for reading! - VioletSpace

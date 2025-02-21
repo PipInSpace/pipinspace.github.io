@@ -54,10 +54,10 @@ contacts below
 ## 1 | Contacts
 You can find me on the following channels:
 
-- <span class="span-highlight">GitHub:</span> [@PipInSpace](https://github.com/PipInSpace) -- feel free to browse my code
+- <span class="span-highlight">GitHub:</span> [@VioletSpace](https://github.com/VioletSpace) -- feel free to browse my code
 - <span class="span-highlight">Fediverse:</span> [@pipinspace@mastodon.social](https://mastodon.social/@pipinspace) -- more personal posting
 - <span class="span-highlight">YouTube:</span> [@pipinspace](https://youtube.com/@pipinspace) -- occasional showcases
-- <span class="span-highlight">Discord:</span> [@pipinspace](https://discordapp.com/users/431788003111731200) -- for private messages
+- <span class="span-highlight">Discord:</span> [@violet__space](https://discordapp.com/users/431788003111731200) -- for private messages
 - <span class="span-highlight">Email:</span> ask me
 - <span class="span-highlight">Signal:</span> ask me
 - <span class="span-highlight">Keys:</span> for confidential messages or checking signatures
@@ -89,9 +89,9 @@ I love science, especially physics! Learning about how the world works in detail
 
 I program in my free time. I'm self-taught and have always enjoyed "teaching" computers new skills. You can check out some of my projects [here](projects.html).
 
-Combining science and computers, I currently work on my main project [IonSolver](https://github.com/PipInSpace/IonSolver), a magnetohydrodynamic simulation software. Working with complex physics and highly efficient parallel computing has been a new and very fun challenge.
+Combining science and computers, I currently work on my main project [IonSolver](https://github.com/VioletSpace/IonSolver), a magnetohydrodynamic simulation software. Working with complex physics and highly efficient parallel computing has been a new and very fun challenge.
 
-I like solving problems and working on my own solutions. I often create custom tools like my static site generator [pagebuild](https://github.com/PipInSpace/pagebuild) or my easily configurable [reminder](https://github.com/PipInSpace/pagebuild) app.
+I like solving problems and working on my own solutions. I often create custom tools like my static site generator [pagebuild](https://github.com/VioletSpace/pagebuild) or my easily configurable [reminder](https://github.com/VioletSpace/pagebuild) app.
 
 Sometimes I tinker with hardware, but I usually stay on the software side. Learning new skills like GPU programming or basic webdev is always fun.
 

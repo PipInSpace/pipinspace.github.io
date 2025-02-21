@@ -28,7 +28,7 @@
             <a href="blog/blog.html">Blog</a>
         </div>
         <div class="social_icons">
-            <a href="https://github.com/PipInSpace" title="My GitHub profile"> My GitHub profile {{component: github-icon}} </a>
+            <a href="https://github.com/VioletSpace" title="My GitHub profile"> My GitHub profile {{component: github-icon}} </a>
             <a href="https://mastodon.social/@pipinspace" title="Me on the Fediverse"> Me on the Fediverse {{component: fedi-icon}}</a>
             <a href="https://www.youtube.com/@pipinspace" title="My YouTube channel"> My YouTube channel {{component: youtube-icon}} </a>
         </div>
@@ -40,7 +40,7 @@ Hi, I'm Johanna aka. VioletSpace. Welcome to my website!
 
 Here, I showcase my favourite <a href="projects.html">projects</a> and write about things on my <a href="blog/blog">Blog</a>. You can also find some info about me in the <a href="about.html">About</a> section.
 
-I am currently working on my main project <a href="https://github.com/PipInSpace/IonSolver">IonSolver</a>, a magnetohydrodynamic physics simulation (Primarily for a student competition). I have some side projects, like my <a href="https://github.com/PipInSpace/reminder"> reminder software</a>, a <a href="https://github.com/PipInSpace/rdex-ui"> fancy sci-fi ui</a> and this website.
+I am currently working on my main project <a href="https://github.com/VioletSpace/IonSolver">IonSolver</a>, a magnetohydrodynamic physics simulation (Primarily for a student competition). I have some side projects, like my <a href="https://github.com/VioletSpace/reminder"> reminder software</a>, a <a href="https://github.com/VioletSpace/rdex-ui"> fancy sci-fi ui</a> and this website.
 
 If you want to work/collab with me, check out my <a href="about.html">about</a> page for contact info and my skills/interests.
 
